@@ -893,6 +893,37 @@
       "title": "liveApp",
       "controlmodule": "shorttext",
       "prompt": "<label>How many years have you lived in Appalachia/Eastern Kentucky?</label>"
+    },
+    {
+      "eid": "119",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 140,
+      "title": "living",
+      "controlmodule": "radiolist",
+      "prompt": "<label>In the past 3 months, where have you been living most of the time?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Shelter (safe havens, temporary living center, homeless shelter, etc.)",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Street/outdoors (e.g., sidewalks, doorway, park, public or abandoned building)",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Institution (e.g., hospital, nursing home, jail/prison)",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Housed",
+          "value": "4"
+        }
+      ]
     }
 
 
