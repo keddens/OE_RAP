@@ -1181,7 +1181,7 @@
       "eid": "126",
       "sheetid": "2",
       "poolid": "rapproject",
-      "sortIndex": 190,
+      "sortIndex": 195,
       "title": "jobtype",
       "controlmodule": "radiolist",
       "prompt": "<label>What was the last type of job you had in the past 3 months?</label><br><em>Select the option that best describes the type of job reported</em>",
@@ -1277,6 +1277,90 @@
           "value": "99"
         }
       ]
+    },
+    {
+      "eid": "127",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 200,
+      "title": "employ1m",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Were you employed in the past 30 days?</label><br><em>(Note: Clarify by focusing on a person’s status during most of the work week to determine whether client worked at all or had a regular job but was off work)</em>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Employed full time (35+ hours per week)",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Employed part time",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Unemployed, looking for work",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Unemployed, disabled",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Unemployed, volunteer work",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Unemployed, retired",
+          "value": "6"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "Unemployed, homemaker or parenting",
+          "value": "7"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "Unemployed, not looking for work",
+          "value": "8"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "Incarcerated, working",
+          "value": "9"
+        },
+        {
+          "arrayid": 9,
+          "prompt": "Incarcerated, not working",
+          "value": "10"
+        },
+        {
+          "arrayid": 10,
+          "prompt": "Other (e.g., Military, KTAP, or other assistance program)",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "eid": "127a",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 205,
+      "title": "emp1mOth",
+      "controlmodule": "shorttext",
+      "prompt": "<label>If other, please specify. (e.g., Military, KTAP, or other assistance program)</label>"
+    },
+    {
+      "eid": "128",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 210,
+      "title": "dayspaid",
+      "controlmodule": "shorttext",
+      "prompt": "<label>In the last 30 days, how many days did you work that you will get paid for?</label><br><em>(include “under the table work”)</em>"
     }
 
 
