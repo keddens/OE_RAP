@@ -1388,8 +1388,54 @@
       "sortIndex": 225,
       "title": "PubAst30",
       "controlmodule": "shorttext",
-      "prompt": "<label>Public Assistance</label><br><em>(Money received from Temporary Assistance to Needy Families (TANF); welfare; food stamps; housing vouchers; transportation money; or any other source of social, general or emergency assistance funds. Also, money made from work fair or other programs within which clients work for assistance money should be recorded here. Also, put unemployment insurance here).</em>"
+      "prompt": "<label>Public Assistance</label><br><em>(Money received from Temporary Assistance to Needy Families (TANF); welfare; food stamps; housing vouchers; transportation money; or any other source of social, general or emergency assistance funds. Also, money made from work fair or other programs within which clients work for assistance money should be recorded here. Also, put unemployment insurance here)</em>"
+    },
+    {
+      "eid": "129c",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 230,
+      "title": "retire30",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Retirement</label><br><em>(Money received from 401k plans, Social Security, military retirement, or pensions)</em>"
+    },
+    {
+      "eid": "129d",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 235,
+      "title": "disabl30",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Disability</label><br><em>(Money received from Supplemental Security Income, worker’s compensation, or veteran disability payments)</em>"
+    },
+    {
+      "eid": "129e",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 240,
+      "title": "nonlgl30",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Non-legal Income</label><br><em>(Any money received from illegal activities, such as drug dealing, stealing, fencing or selling stolen goods, panhandling, illicit gambling, or illegal prostitution. If a client has received drugs in exchange for illegal activity, do not convert to a dollar amount)</em>"
+    },
+    {
+      "eid": "129f",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 245,
+      "title": "other30",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Other</label><br><em>(Interviewer note: Money received legally from any other sources such as trust fund payments, recycling, gambling if from legal sources (lottery payments, casinos, etc.), alimony, child support, tribal per capita funds, death benefits, stock options)</em>"
+    },
+    {
+      "eid": "129f2",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 250,
+      "title": "ot30type",
+      "controlmodule": "shorttext",
+      "prompt": "<label>If other, please specify</label>"
     }
+
 
 
 
