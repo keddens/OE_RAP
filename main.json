@@ -766,6 +766,51 @@
           "value": "98"
         }
       ]
+    },
+    {
+      "eid": "112",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 105,
+      "title": "Intnthrs",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How many hours per week do you spend on the internet?</label>"
+    },
+    {
+      "eid": "113",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 110,
+      "title": "Intntact",
+      "controlmodule": "checklist",
+      "prompt": "<label>Which of the following do you use on the Internet? (check all that apply)</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Facebook",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Twitter",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Instagram",
+          "value": "2"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "LinkedIn",
+          "value": "3"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "email",
+          "value": "4"
+        }
+      ]
     }
 
 
