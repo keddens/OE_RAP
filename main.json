@@ -1434,6 +1434,77 @@
       "title": "ot30type",
       "controlmodule": "shorttext",
       "prompt": "<label>If other, please specify</label>"
+    },
+    {
+      "eid": "130",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 255,
+      "title": "depndnum",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How many people are dependent on this income <u>including you</u>?</label>"
+    },
+    {
+      "eid": "131",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 250,
+      "title": "housenum",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How many people are there in your family household?</label><br><em>Enter 98 for Refuse to Answer</em>"
+    },
+    {
+      "eid": "132",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 255,
+      "title": "faminc30",
+      "controlmodule": "shorttext",
+      "prompt": "<label>What was the total family income of everyone in your household together in the past 30 days?</label><br><em>Enter 9999998 for Refuse to Answer</em>"
+    },
+    {
+      "eid": "133",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 260,
+      "title": "argue1m",
+      "controlmodule": "shorttext",
+      "prompt": "<label>During the past 30 days, on how many days have you had any money problems, including arguing about money or not having enough for food or housing?</label><br><em>Enter 998 for Refuse to Answer</em>"
+    },
+    {
+      "eid": "134",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 265,
+      "title": "argue3mY",
+      "controlmodule": "radiolist",
+      "prompt": "<label>In the past 3 months, did you have any money problems, including arguing about money or not having enough for food or housing?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "136",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 265,
+      "title": "mnydrug3",
+      "controlmodule": "shorttext",
+      "prompt": "<label>In the past 3 months, how much did you spend on drugs?</label><br><em>Enter 999998 for Refuse to Answer</em>"
     }
 
 
