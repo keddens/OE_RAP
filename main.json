@@ -1,1 +1,775 @@
+{
+  "poollogic": {
+    "poolid": "rapproject",
+    "title": "Stephen: Re-Entering Appalachia Project (RAP)",
+    "description": "Survey tool for Dr. Carrie Oser's RAP Project",
+    "introduction": "This is the introduction for Stephen's test pool",
+    "afterward": "Thank you for taking our pool.",
+    "dateCreated": "2016-10-18T14:09:41.044Z",
+    "username": "",
+    "meta": "",
+    "sheetOrder": [
+      "1",
+      "2"
+    ]
+  },
+  "sheetlogic": [
+    {
+      "sheetid": "1",
+      "title": "Re-Entering Appalachia Project Introduction",
+      "description": ""
+    },
+    {
+      "sheetid": "2",
+      "title": "Demographic Characteristics 1",
+      "description": ""
+    }
+  ],
+  "eddilogic": [
+    {
+      "eid": "intro-boil",
+      "sheetid": "1",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "StudyIntroductionBoilerPlate",
+      "controlmodule": "boilerplate",
+      "prompt": "<h1>Re-entering Appalachia Project (RAP)</h1>",
+      "content": "<br><em>READ:<em><br><br><em>Hello, my name is____, and I work for the Re-entering Appalachia Project (also known as RAP). Thank you for agreeing to talk with me today. This interview usually takes about <u>1 to 2 hours</u> to complete.  I'm going to read you a set of questions exactly as they are worded so that each person is asked the same thing.  I will need to keep things moving along, so I hope that I don't sound rude if I tell you we need to move on to the next question.</em><br><br><em>I will be asking primarily about your <u>personal and family background, religious and spiritual beliefs, re-entry needs, drug use, access to drug treatment, health, criminal and legal involvement</u>, and the people in your life. All of your answers will be kept confidential and will in no way affect your legal status, or any services or money you may receive.  Many of my questions will refer to the <u>last 3 months</u>, which is referring to the time since your release from prison, or the <u>last 30 days</u>.  I'll try to be clear, but please ask me if you are not sure about the time period involved.</em><br><br><em>It is very important that you be <u>open and honest</u>.  Some questions may be sensitive or difficult to talk about, but they are necessary to help us understand the re-entry process in Appalachia.  Do you have <u>any questions</u> before we start?</em><br><br>"
+    },
+    {
+      "_comment": "Is there any way to dynamically display the current date? Maybe through PHP?",
+      "eid": "1monthdate",
+      "sheetid": "1",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "1modate",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Today is ___. So 30 days before ___ would be ___<label>"
+    },
+    {
+      "eid": "demo-boil",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "DemoBoil",
+      "controlmodule": "boilerplate",
+      "prompt": "<em>READ<em>",
+      "content": "<p>Next, I would like to ask your some questions about your background.  Please remember your answers will be kept private.</p>"
+    },
+    {
+      "eid": "101",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "ReleaseD",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Can you please verify what your release date was? (Please enter in mm/dd/yyyy. Date should be on locator form.)</label>"
+    },
+    {
+      "eid": "102",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "ParoleNY",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Have you been on parole since your release/discharge?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "102a",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "ParoleCy",
+      "controlmodule": "radiolist",
+      "prompt": "<label>If yes, in what county do you report to your probabtion officer (PO)?</label>",
+      "filter": {
+        "details": {
+          "key": "102",
+          "value": "Yes"
+        }
+      },
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Adair",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Bath",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Bell",
+          "value": "2"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Bell",
+          "value": "3"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Boyd",
+          "value": "4"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Breathitt",
+          "value": "5"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "Carter",
+          "value": "6"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "Casey",
+          "value": "7"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "Clark",
+          "value": "8"
+        },
+        {
+          "arrayid": 9,
+          "prompt": "Clay",
+          "value": "9"
+        },
+        {
+          "arrayid": 10,
+          "prompt": "Clinton",
+          "value": "10"
+        },
+        {
+          "arrayid": 11,
+          "prompt": "Cumberland",
+          "value": "11"
+        },
+        {
+          "arrayid": 12,
+          "prompt": "Edmonson",
+          "value": "12"
+        },
+        {
+          "arrayid": 13,
+          "prompt": "Elliot",
+          "value": "13"
+        },
+        {
+          "arrayid": 14,
+          "prompt": "Estill",
+          "value": "14"
+        },
+        {
+          "arrayid": 15,
+          "prompt": "Fleming",
+          "value": "15"
+        },
+        {
+          "arrayid": 16,
+          "prompt": "Floyd",
+          "value": "16"
+        },
+        {
+          "arrayid": 17,
+          "prompt": "Garrad",
+          "value": "17"
+        },
+        {
+          "arrayid": 18,
+          "prompt": "Green",
+          "value": "18"
+        },
+        {
+          "arrayid": 19,
+          "prompt": "Greenup",
+          "value": "19"
+        },
+        {
+          "arrayid": 20,
+          "prompt": "Harlan",
+          "value": "20"
+        },
+        {
+          "arrayid": 21,
+          "prompt": "Hart",
+          "value": "21"
+        },
+        {
+          "arrayid": 22,
+          "prompt": "Jackson",
+          "value": "22"
+        },
+        {
+          "arrayid": 23,
+          "prompt": "Johnson",
+          "value": "23"
+        },
+        {
+          "arrayid": 24,
+          "prompt": "Knott",
+          "value": "24"
+        },
+        {
+          "arrayid": 25,
+          "prompt": "Knox",
+          "value": "25"
+        },
+        {
+          "arrayid": 26,
+          "prompt": "Laurel",
+          "value": "26"
+        },
+        {
+          "arrayid": 27,
+          "prompt": "Lawrence",
+          "value": "27"
+        },
+        {
+          "arrayid": 28,
+          "prompt": "Lee",
+          "value": "28"
+        },
+        {
+          "arrayid": 29,
+          "prompt": "Leslie",
+          "value": "29"
+        },
+        {
+          "arrayid": 30,
+          "prompt": "Letcher",
+          "value": "30"
+        },
+        {
+          "arrayid": 31,
+          "prompt": "Lewis",
+          "value": "31"
+        },
+        {
+          "arrayid": 32,
+          "prompt": "Lincoln",
+          "value": "32"
+        },
+        {
+          "arrayid": 33,
+          "prompt": "McCreary",
+          "value": "33"
+        },
+        {
+          "arrayid": 34,
+          "prompt": "Madison",
+          "value": "34"
+        },
+        {
+          "arrayid": 35,
+          "prompt": "Magoffin",
+          "value": "35"
+        },
+        {
+          "arrayid": 36,
+          "prompt": "Martin",
+          "value": "36"
+        },
+        {
+          "arrayid": 37,
+          "prompt": "Menifee",
+          "value": "37"
+        },
+        {
+          "arrayid": 38,
+          "prompt": "Metcalfe",
+          "value": "38"
+        },
+        {
+          "arrayid": 39,
+          "prompt": "Monroe",
+          "value": "39"
+        },
+        {
+          "arrayid": 40,
+          "prompt": "Montgomery",
+          "value": "40"
+        },
+        {
+          "arrayid": 41,
+          "prompt": "Morgan",
+          "value": "41"
+        },
+        {
+          "arrayid": 40,
+          "prompt": "Nicholas",
+          "value": "40"
+        },
+        {
+          "arrayid": 41,
+          "prompt": "Owsley",
+          "value": "41"
+        },
+        {
+          "arrayid": 42,
+          "prompt": "Perry",
+          "value": "42"
+        },
+        {
+          "arrayid": 43,
+          "prompt": "Pike",
+          "value": "43"
+        },
+        {
+          "arrayid": 44,
+          "prompt": "Powell",
+          "value": "44"
+        },
+        {
+          "arrayid": 45,
+          "prompt": "Pulaski",
+          "value": "45"
+        },
+        {
+          "arrayid": 46,
+          "prompt": "Robertson",
+          "value": "46"
+        },
+        {
+          "arrayid": 47,
+          "prompt": "Rockcastle",
+          "value": "47"
+        },
+        {
+          "arrayid": 48,
+          "prompt": "Rowan",
+          "value": "48"
+        },
+        {
+          "arrayid": 49,
+          "prompt": "Russel",
+          "value": "49"
+        },
+        {
+          "arrayid": 50,
+          "prompt": "Wayne",
+          "value": "50"
+        },
+        {
+          "arrayid": 51,
+          "prompt": "Whitley",
+          "value": "51"
+        },
+        {
+          "arrayid": 52,
+          "prompt": "Wolfe",
+          "value": "52"
+        }
+      ]
+    },
+    {
+      "eid": "103",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "birthdte",
+      "controlmodule": "shorttext",
+      "prompt": "<label>What is your birthdate? (Note: Enter in mm/dd/yyyy. Enter year 2098 is if he or she refuses to answer.)</label>"
+    },
+    {
+      "eid": "104",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 25,
+      "title": "gender",
+      "controlmodule": "radiolist",
+      "prompt": "<label>What is your gender?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Male",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Female",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Transgender (male to female)",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Transgender (female to male)",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Other",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "105",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 30,
+      "title": "race",
+      "controlmodule": "radiolist",
+      "prompt": "<label>What race do you consider yourself to be?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "White",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Black or African American",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "American Indian/Alaskan Native",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Asian",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Native Hawaiian or Other Pacific Islander",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Other",
+          "value": "6"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "105a",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 35,
+      "title": "raceothr",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Please specify Other</label>"
+    },
+    {
+      "eid": "106",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 40,
+      "title": "hispanic",
+      "controlmodule": "radiolist",
+      "prompt": "<label>What race do you consider yourself to be?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "_comment": "the select controlmodule doesn't seem to be working correctly",
+      "eid": "107",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 45,
+      "title": "educatyr",
+      "controlmodule": "select",
+      "prompt": "<label>How many years of education have you completed?</label><br><br><em>(Note: 01=1st grade, 12=12th grade, 13=college freshman, 16=college completion, 17-graduate degree, 20=professional degree)</em>",
+      "arrayPrompts": [
+        {
+          "id": 0,
+          "prompt": "01-1st grade"
+        },
+        {
+          "id": 97,
+          "prompt": "Don't know"
+        },
+        {
+          "id": 98,
+          "prompt": "Refused"
+        }
+      ]
+    },
+    {
+      "eid": "108",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 50,
+      "title": "marital",
+      "controlmodule": "radiolist",
+      "prompt": "<label>What is your marital status? (choose one)</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Legally Married",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Not Married but Living as Married (Common Law)",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Remarried",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Widowed",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Divorced",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Separated",
+          "value": "6"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "Single, Never Married",
+          "value": "7"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "Don't know",
+          "value": "97"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "109",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 55,
+      "title": "sexpref",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Do you consider yourself to be: (choose one)</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Heterosexual or Straight",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Gay or Lesbian",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Bisexual",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Other (specify)",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Don't know",
+          "value": "97"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "109a",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 60,
+      "title": "sexprefo",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Please specify Other</label>"
+    },
+    {
+      "eid": "110",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 65,
+      "title": "kidNY",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Do you have children?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "no",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "refuse to answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "110a",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 70,
+      "title": "kidnum",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How many children do you have (biological, step-children, or adpoted)?</label>"
+    },
+    {
+      "eid": "110b",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 75,
+      "title": "kid18",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How many children under the age of 18 do you have?</label>"
+    },
+    {
+      "eid": "110c",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 80,
+      "title": "kidn18hme",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How many children under the age of 18 are living with you at this time?</label>"
+    },
+    {
+      "eid": "110d",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 85,
+      "title": "kidn18fin",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How many children under 18 received financial support from you in the last 3 months?</label>"
+    },
+    {
+      "eid": "110e",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 90,
+      "title": "kidn18cus",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How many children under 18 are currently in someone else's temporary legal custody?</label>"
+    },
+    {
+      "eid": "110f",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 95,
+      "title": "kid18rmv",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Have any of your children been removed from your legal custody in the past 3 months?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "no",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "refuse to answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "111",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 100,
+      "title": "Internet",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Do you use the Internet, at least occasionally?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "no",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "refuse to answer",
+          "value": "98"
+        }
+      ]
+    }
 
+
+
+
+  ]
+}
