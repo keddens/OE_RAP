@@ -892,7 +892,7 @@
       "sortIndex": 135,
       "title": "liveApp",
       "controlmodule": "shorttext",
-      "prompt": "<label>How many years have you lived in Appalachia/Eastern Kentucky?</label>"
+      "prompt": "<label>How many years have you lived in Appalachia/Eastern Kentucky? (enter 998 for Refuse to Answer)</label>"
     },
     {
       "eid": "119",
@@ -1155,7 +1155,17 @@
       "sortIndex": 180,
       "title": "emp3mOth",
       "controlmodule": "shorttext",
-      "prompt": "<label>If other, please specify. (e.g., Military, KTAP, or other assistance program)"
+      "prompt": "<label>If other, please specify. (e.g., Military, KTAP, or other assistance program)</label>"
+    },
+    {
+      "_comment": "make this a numeric entry if possible",
+      "eid": "124",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 185,
+      "title": "dayswork",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How many days were you out of prison before you started to work? (enter 99 if not applicable)</label>"
     }
 
 
