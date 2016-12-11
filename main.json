@@ -892,7 +892,7 @@
       "sortIndex": 135,
       "title": "liveApp",
       "controlmodule": "shorttext",
-      "prompt": "<label>How many years have you lived in Appalachia/Eastern Kentucky? (enter 998 for Refuse to Answer)</label>"
+      "prompt": "<label>How many years have you lived in Appalachia/Eastern Kentucky?</label><br><em>(enter 998 for Refuse to Answer)</em>"
     },
     {
       "eid": "119",
@@ -1165,7 +1165,118 @@
       "sortIndex": 185,
       "title": "dayswork",
       "controlmodule": "shorttext",
-      "prompt": "<label>How many days were you out of prison before you started to work? (enter 99 if not applicable)</label>"
+      "prompt": "<label>How many days were you out of prison before you started to work?</label><br><em>(enter 99 if not applicable)</em>"
+    },
+    {
+      "_comment": "make this a numeric entry if possible",
+      "eid": "125",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 190,
+      "title": "jobsnum",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How many jobs have you had in the past 3 months?</label>"
+    },
+    {
+      "eid": "126",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 190,
+      "title": "jobtype",
+      "controlmodule": "radiolist",
+      "prompt": "<label>What was the last type of job you had in the past 3 months?</label><br><em>Select the option that best describes the type of job reported</em>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Professional & technical",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Manager and administrator",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Sales",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Clerical or office worker",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Craft and kindred",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Operative",
+          "value": "6"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "Transportation equipment operative",
+          "value": "7"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "Nonfarm laborer",
+          "value": "8"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "Private household worker",
+          "value": "9"
+        },
+        {
+          "arrayid": 9,
+          "prompt": "Service worker",
+          "value": "10"
+        },
+        {
+          "arrayid": 10,
+          "prompt": "Farmer and farm manager",
+          "value": "11"
+        },
+        {
+          "arrayid": 11,
+          "prompt": "Farm laborer",
+          "value": "12"
+        },
+        {
+          "arrayid": 12,
+          "prompt": "Military service",
+          "value": "13"
+        },
+        {
+          "arrayid": 13,
+          "prompt": "Fast food industry",
+          "value": "14"
+        },
+        {
+          "arrayid": 14,
+          "prompt": "Construction",
+          "value": "15"
+        },
+        {
+          "arrayid": 15,
+          "prompt": "Other",
+          "value": "16"
+        },
+        {
+          "arrayid": 16,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        },
+        {
+          "arrayid": 17,
+          "prompt": "Not Applicable",
+          "value": "99"
+        }
+      ]
     }
 
 
