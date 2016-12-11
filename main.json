@@ -1372,6 +1372,24 @@
       "prompt": "<p>Approximately how much money did <u>YOU</u> receive before taxes in the last 30 days on the street (not incarcerated) from…</p>",
       "content": "<em>(Note: If an item does not apply then enter 0. --Use only whole dollar amounts.  For example, $200.00 =200)</em>"
     },
+    {
+      "eid": "129a",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 220,
+      "title": "wages30",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Wages</label><br><em>(Money earned through legal full- or part-time employment including “under-the-table” income..</em>"
+    },
+    {
+      "eid": "129b",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 225,
+      "title": "PubAst30",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Public Assistance</label><br><em>(Money received from Temporary Assistance to Needy Families (TANF); welfare; food stamps; housing vouchers; transportation money; or any other source of social, general or emergency assistance funds. Also, money made from work fair or other programs within which clients work for assistance money should be recorded here. Also, put unemployment insurance here).</em>"
+    }
 
 
 
