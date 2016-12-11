@@ -811,7 +811,33 @@
           "value": "4"
         }
       ]
-    }
+    },
+    {
+      "eid": "114",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 115,
+      "title": "license",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Do you have a valid driver's license?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
 
 
 
