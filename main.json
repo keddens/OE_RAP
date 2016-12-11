@@ -901,7 +901,7 @@
       "sortIndex": 140,
       "title": "living",
       "controlmodule": "radiolist",
-      "prompt": "<label>In the past 3 months, where have you been living most of the time?</label>",
+      "prompt": "<label>In the past 3 months, where have you been living most of the time?</label><em>(Note: do not read the responses, ask this as open-ended and the code response).</em>",
       "arrayPrompts":[
         {
           "arrayid": 0,
@@ -924,6 +924,51 @@
           "value": "4"
         }
       ]
+    },
+    {
+      "eid": "119a",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 145,
+      "title": "housed",
+      "controlmodule": "radiolist",
+      "prompt": "<label>If “Housed”, indicate where:</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Own/rent apartment, room, or house",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Someone else’s apartment, room or house",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Halfway house",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Residential treatment",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Other housed",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "eid": "119b",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 150,
+      "title": "housedoth",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Please specify \"Other\""
     }
 
 
