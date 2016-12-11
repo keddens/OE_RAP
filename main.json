@@ -11,7 +11,8 @@
     "sheetOrder": [
       "1",
       "2",
-      "3"
+      "3",
+      "4"
     ]
   },
   "sheetlogic": [
@@ -28,6 +29,11 @@
     {
       "sheetid": "3",
       "title": "Religion",
+      "description": ""
+    },
+    {
+      "sheetid": "4",
+      "title": "Spiritual Well-Being Scale",
       "description": ""
     }
   ],
@@ -1792,6 +1798,16 @@
           "value": "98"
         }
       ]
+    },
+    {
+      "eid": "Spiritual Well-Being Scale",
+      "sheetid": "4",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "Spiritual Well-Being Scale",
+      "controlmodule": "boilerplate",
+      "prompt": "<h3>Spiritual Well-Being Scale</h3>",
+      "content": "<br><em>READ</em><br><br><em>For each of the following statements, please indicate the extent of your agreement or disagreement as it describes your personal spiritual experience.  When I refer to a \"higher power,\" please understand that that could mean different things to different people, for example:  a Christian God, forms of nature, energy...or other things that people may choose to believe in.  When answering these questions, please refer to your own personal belief systems.</em><br>"
     }
 
 
