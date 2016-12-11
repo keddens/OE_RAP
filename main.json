@@ -969,6 +969,193 @@
       "title": "housedoth",
       "controlmodule": "shorttext",
       "prompt": "<label>Please specify \"Other\""
+    },
+    {
+      "eid": "120",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 155,
+      "title": "homeless",
+      "controlmodule": "radiolist",
+      "prompt": "<label>In the last 3 months, have you been homeless at any time?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Don't Know",
+          "value": "97"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "121",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 160,
+      "title": "livewNY",
+      "controlmodule": "radiolist",
+      "prompt": "<label>During the past 3 months, have you lived with anyone other than yourself?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "122",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 165,
+      "title": "livewith",
+      "controlmodule": "checklist",
+      "prompt": "<label>Who have you lived with? Have you lived with...? (check all that apply)</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Spouse, significant companion or other sexual partner",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Parents",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Your biological, step-children, or adopted children",
+          "value": "2"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Your brothers or sisters",
+          "value": "3"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Other relatives",
+          "value": "4"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Other adult roommates or friends",
+          "value": "5"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "Other",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "eid": "122a",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 170,
+      "title": "liveothr",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Please specify \"Other\""
+    },
+    {
+      "eid": "123",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 175,
+      "title": "employ3m",
+      "controlmodule": "radiolist",
+      "prompt": "<label>What has been your usual employment pattern in the past 3 months? </label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Employed full time (35+ hours per week)",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Employed part time",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Unemployed, looking for work",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Unemployed, disabled",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Unemployed, volunteer work",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Unemployed, retired",
+          "value": "6"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "Unemployed, homemaker or parenting",
+          "value": "7"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "Unemployed, not looking for work",
+          "value": "8"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "Incarcerated, working",
+          "value": "9"
+        },
+        {
+          "arrayid": 9,
+          "prompt": "Incarcerated, not working",
+          "value": "10"
+        },
+        {
+          "arrayid": 10,
+          "prompt": "Other (e.g., Military, KTAP, or other assistance program)",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "eid": "123a",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 180,
+      "title": "emp3mOth",
+      "controlmodule": "shorttext",
+      "prompt": "<label>If other, please specify. (e.g., Military, KTAP, or other assistance program)"
     }
 
 
