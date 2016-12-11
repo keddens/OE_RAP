@@ -1657,6 +1657,141 @@
       "title": "relother",
       "controlmodule": "shorttext",
       "prompt": "<label>If other, please specify</label>"
+    },
+    {
+      "eid": "203",
+      "sheetid": "3",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "relgood",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Do you consider yourself a member of a religious group?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Not Applicable",
+          "value": "99"
+        }
+      ]
+    },
+    {
+      "eid": "204",
+      "sheetid": "3",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "relrgulr",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Do you regularly attend services or ceremonies?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "205",
+      "sheetid": "3",
+      "poolid": "rapproject",
+      "sortIndex": 25,
+      "title": "relstrng",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Do you consider your religious or spiritual beliefs to be very strong?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "206",
+      "sheetid": "3",
+      "poolid": "rapproject",
+      "sortIndex": 30,
+      "title": "relimp",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Do you consider your religious or spiritual beliefs to be very important to you?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "207",
+      "sheetid": "3",
+      "poolid": "rapproject",
+      "sortIndex": 35,
+      "title": "reldecsn",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Do you consider your religious or spiritual beliefs to often influence your decisions?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
     }
 
 
