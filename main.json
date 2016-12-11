@@ -838,6 +838,32 @@
         }
       ]
     },
+    {
+      "eid": "115",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 120,
+      "title": "carNY",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Do you have an automobile available for use?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    }
 
 
 
