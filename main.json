@@ -863,7 +863,38 @@
           "value": "98"
         }
       ]
+    },
+    {
+      "_comment": "maybe this could be a numeric entry instead?",
+      "eid": "116",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 125,
+      "title": "zip",
+      "controlmodule": "shorttext",
+      "prompt": "<label>What zip code do you live in?</label>"
+    },
+    {
+      "_comment": "turn this into select/radio if carrie gives us a list of counties?",
+      "eid": "117",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 130,
+      "title": "cntylive",
+      "controlmodule": "shorttext",
+      "prompt": "<label>What county do you live in?</label>"
+    },
+    {
+      "_comment": "maybe this could be a numeric entry instead?",
+      "eid": "118",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 135,
+      "title": "liveApp",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How many years have you lived in Appalachia/Eastern Kentucky?</label>"
     }
+
 
 
 
