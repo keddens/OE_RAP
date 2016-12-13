@@ -10,7 +10,9 @@
     "meta": "",
     "sheetOrder": [
       "1",
-      "2"
+      "2",
+      "3",
+      "4"
     ]
   },
   "sheetlogic": [
@@ -22,6 +24,16 @@
     {
       "sheetid": "2",
       "title": "Demographic Characteristics 1",
+      "description": ""
+    },
+    {
+      "sheetid": "3",
+      "title": "Religion",
+      "description": ""
+    },
+    {
+      "sheetid": "4",
+      "title": "Spiritual Well-Being Scale",
       "description": ""
     }
   ],
@@ -44,7 +56,27 @@
       "sortIndex": 5,
       "title": "1modate",
       "controlmodule": "shorttext",
-      "prompt": "<label>Today is ___. So 30 days before ___ would be ___<label>"
+      "prompt": "<label>Today is mm/dd/yyyy. So <strong>30 days</strong> before mm/dd/yyyy would be...<label><br><br><em>(Enter the data that <u>precedes</u> today’s date on the timeline by 30 days in mm / dd / yyyy format.)</em>"
+    },
+    {
+      "_comment": "Is there any way to dynamically display the current date? Maybe through PHP?",
+      "eid": "3monthdate",
+      "sheetid": "1",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "3modate",
+      "controlmodule": "shorttext",
+      "prompt": "<label>And <strong>3 months</strong> before mm/dd/yyyy would be...<label><br><br><em>(Enter the data that <u>precedes</u> today’s date on the timeline by 3 months in mm / dd / yyyy format.)</em>"
+    },
+    {
+      "eid": "intro-boil2",
+      "sheetid": "1",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "introboil2",
+      "controlmodule": "boilerplate",
+      "prompt": "<em>READ<em>",
+      "content": "<p>It is important that you think about the last 3 months and the last 30 days.  I will keep referring back to these time frames throughout our interview.</p>"
     },
     {
       "eid": "demo-boil",
@@ -1362,9 +1394,448 @@
       "title": "dayspaid",
       "controlmodule": "shorttext",
       "prompt": "<label>In the last 30 days, how many days did you work that you will get paid for?</label><br><em>(include “under the table work”)</em>"
+<<<<<<< HEAD
 =======
 >>>>>>> master
+=======
+    },
+    {
+      "eid": "129",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 215,
+      "title": "Cashboil",
+      "controlmodule": "boilerplate",
+      "prompt": "<p>Approximately how much money did <u>YOU</u> receive before taxes in the last 30 days on the street (not incarcerated) from…</p>",
+      "content": "<em>(Note: If an item does not apply then enter 0. --Use only whole dollar amounts.  For example, $200.00 =200)</em>"
+    },
+    {
+      "eid": "129a",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 220,
+      "title": "wages30",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Wages</label><br><em>(Money earned through legal full- or part-time employment including “under-the-table” income..</em>"
+    },
+    {
+      "eid": "129b",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 225,
+      "title": "PubAst30",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Public Assistance</label><br><em>(Money received from Temporary Assistance to Needy Families (TANF); welfare; food stamps; housing vouchers; transportation money; or any other source of social, general or emergency assistance funds. Also, money made from work fair or other programs within which clients work for assistance money should be recorded here. Also, put unemployment insurance here)</em>"
+    },
+    {
+      "eid": "129c",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 230,
+      "title": "retire30",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Retirement</label><br><em>(Money received from 401k plans, Social Security, military retirement, or pensions)</em>"
+    },
+    {
+      "eid": "129d",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 235,
+      "title": "disabl30",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Disability</label><br><em>(Money received from Supplemental Security Income, worker’s compensation, or veteran disability payments)</em>"
+    },
+    {
+      "eid": "129e",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 240,
+      "title": "nonlgl30",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Non-legal Income</label><br><em>(Any money received from illegal activities, such as drug dealing, stealing, fencing or selling stolen goods, panhandling, illicit gambling, or illegal prostitution. If a client has received drugs in exchange for illegal activity, do not convert to a dollar amount)</em>"
+    },
+    {
+      "eid": "129f",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 245,
+      "title": "other30",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Other</label><br><em>(Interviewer note: Money received legally from any other sources such as trust fund payments, recycling, gambling if from legal sources (lottery payments, casinos, etc.), alimony, child support, tribal per capita funds, death benefits, stock options)</em>"
+    },
+    {
+      "eid": "129f2",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 250,
+      "title": "ot30type",
+      "controlmodule": "shorttext",
+      "prompt": "<label>If other, please specify</label>"
+    },
+    {
+      "eid": "130",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 255,
+      "title": "depndnum",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How many people are dependent on this income <u>including you</u>?</label>"
+    },
+    {
+      "eid": "131",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 250,
+      "title": "housenum",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How many people are there in your family household?</label><br><em>Enter 98 for Refuse to Answer</em>"
+    },
+    {
+      "eid": "132",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 255,
+      "title": "faminc30",
+      "controlmodule": "shorttext",
+      "prompt": "<label>What was the total family income of everyone in your household together in the past 30 days?</label><br><em>Enter 9999998 for Refuse to Answer</em>"
+    },
+    {
+      "eid": "133",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 260,
+      "title": "argue1m",
+      "controlmodule": "shorttext",
+      "prompt": "<label>During the past 30 days, on how many days have you had any money problems, including arguing about money or not having enough for food or housing?</label><br><em>Enter 998 for Refuse to Answer</em>"
+    },
+    {
+      "eid": "134",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 265,
+      "title": "argue3mY",
+      "controlmodule": "radiolist",
+      "prompt": "<label>In the past 3 months, did you have any money problems, including arguing about money or not having enough for food or housing?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "136",
+      "sheetid": "2",
+      "poolid": "rapproject",
+      "sortIndex": 265,
+      "title": "mnydrug3",
+      "controlmodule": "shorttext",
+      "prompt": "<label>In the past 3 months, how much did you spend on drugs?</label><br><em>Enter 999998 for Refuse to Answer</em>"
+    },
+    {
+      "eid": "201",
+      "sheetid": "3",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "relmembr",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Do you consider yourself a member of a religious group?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "202",
+      "sheetid": "3",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "reltype",
+      "controlmodule": "radiolist",
+      "prompt": "<label>If so, which of the following best describes it?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Baptist",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Buddhist",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Catholic",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Evangelical",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Hindu",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Jewish",
+          "value": "6"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "Lutheran",
+          "value": "7"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "Methodist",
+          "value": "8"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "Mormon",
+          "value": "9"
+        },
+        {
+          "arrayid": 9,
+          "prompt": "Muslim",
+          "value": "10"
+        },
+        {
+          "arrayid": 10,
+          "prompt": "Pentecostal",
+          "value": "11"
+        },
+        {
+          "arrayid": 11,
+          "prompt": "Presbyterian",
+          "value": "12"
+        },
+        {
+          "arrayid": 12,
+          "prompt": "Other Protestant",
+          "value": "13"
+        },
+        {
+          "arrayid": 13,
+          "prompt": "Shinto",
+          "value": "14"
+        },
+        {
+          "arrayid": 14,
+          "prompt": "Native American Church",
+          "value": "15"
+        },
+        {
+          "arrayid": 15,
+          "prompt": "Traditional Native American",
+          "value": "16"
+        },
+        {
+          "arrayid": 16,
+          "prompt": "Christian (non-denominational or not specified)",
+          "value": "17"
+        },
+        {
+          "arrayid": 17,
+          "prompt": "Some other group (Please Describe)",
+          "value": "18"
+        },
+        {
+          "arrayid": 18,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        },
+        {
+          "arrayid": 19,
+          "prompt": "Not Applicable",
+          "value": "99"
+        }
+      ]
+    },
+    {
+      "eid": "202a",
+      "sheetid": "3",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "relother",
+      "controlmodule": "shorttext",
+      "prompt": "<label>If other, please specify</label>"
+    },
+    {
+      "eid": "203",
+      "sheetid": "3",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "relgood",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Do you consider yourself a member of a religious group?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Not Applicable",
+          "value": "99"
+        }
+      ]
+    },
+    {
+      "eid": "204",
+      "sheetid": "3",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "relrgulr",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Do you regularly attend services or ceremonies?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "205",
+      "sheetid": "3",
+      "poolid": "rapproject",
+      "sortIndex": 25,
+      "title": "relstrng",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Do you consider your religious or spiritual beliefs to be very strong?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "206",
+      "sheetid": "3",
+      "poolid": "rapproject",
+      "sortIndex": 30,
+      "title": "relimp",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Do you consider your religious or spiritual beliefs to be very important to you?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "207",
+      "sheetid": "3",
+      "poolid": "rapproject",
+      "sortIndex": 35,
+      "title": "reldecsn",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Do you consider your religious or spiritual beliefs to often influence your decisions?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "Spiritual Well-Being Scale",
+      "sheetid": "4",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "Spiritual Well-Being Scale",
+      "controlmodule": "boilerplate",
+      "prompt": "<h3>Spiritual Well-Being Scale</h3>",
+      "content": "<br><em>READ</em><br><br><em>For each of the following statements, please indicate the extent of your agreement or disagreement as it describes your personal spiritual experience.  When I refer to a \"higher power,\" please understand that that could mean different things to different people, for example:  a Christian God, forms of nature, energy...or other things that people may choose to believe in.  When answering these questions, please refer to your own personal belief systems.</em><br><br>"
+>>>>>>> InDev2
     }
+
 
 
 
