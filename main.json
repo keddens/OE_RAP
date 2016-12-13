@@ -775,6 +775,7 @@
       "title": "Intnthrs",
       "controlmodule": "shorttext",
       "prompt": "<label>How many hours per week do you spend on the internet?</label>"
+<<<<<<< HEAD
     },
     {
       "eid": "113",
@@ -1361,6 +1362,8 @@
       "title": "dayspaid",
       "controlmodule": "shorttext",
       "prompt": "<label>In the last 30 days, how many days did you work that you will get paid for?</label><br><em>(include “under the table work”)</em>"
+=======
+>>>>>>> master
     }
 
 
