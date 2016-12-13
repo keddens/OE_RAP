@@ -56,7 +56,27 @@
       "sortIndex": 5,
       "title": "1modate",
       "controlmodule": "shorttext",
-      "prompt": "<label>Today is ___. So 30 days before ___ would be ___<label>"
+      "prompt": "<label>Today is mm/dd/yyyy. So <strong>30 days</strong> before mm/dd/yyyy would be...<label><br><br><em>(Enter the data that <u>precedes</u> today’s date on the timeline by 30 days in mm / dd / yyyy format.)</em>"
+    },
+    {
+      "_comment": "Is there any way to dynamically display the current date? Maybe through PHP?",
+      "eid": "3monthdate",
+      "sheetid": "1",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "3modate",
+      "controlmodule": "shorttext",
+      "prompt": "<label>And <strong>3 months</strong> before mm/dd/yyyy would be...<label><br><br><em>(Enter the data that <u>precedes</u> today’s date on the timeline by 3 months in mm / dd / yyyy format.)</em>"
+    },
+    {
+      "eid": "intro-boil2",
+      "sheetid": "1",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "introboil2",
+      "controlmodule": "boilerplate",
+      "prompt": "<em>READ<em>",
+      "content": "<p>It is important that you think about the last 3 months and the last 30 days.  I will keep referring back to these time frames throughout our interview.</p>"
     },
     {
       "eid": "demo-boil",
