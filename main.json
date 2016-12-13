@@ -807,7 +807,6 @@
       "title": "Intnthrs",
       "controlmodule": "shorttext",
       "prompt": "<label>How many hours per week do you spend on the internet?</label>"
-<<<<<<< HEAD
     },
     {
       "eid": "113",
@@ -1394,10 +1393,6 @@
       "title": "dayspaid",
       "controlmodule": "shorttext",
       "prompt": "<label>In the last 30 days, how many days did you work that you will get paid for?</label><br><em>(include “under the table work”)</em>"
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
     },
     {
       "eid": "129",
@@ -1833,7 +1828,6 @@
       "controlmodule": "boilerplate",
       "prompt": "<h3>Spiritual Well-Being Scale</h3>",
       "content": "<br><em>READ</em><br><br><em>For each of the following statements, please indicate the extent of your agreement or disagreement as it describes your personal spiritual experience.  When I refer to a \"higher power,\" please understand that that could mean different things to different people, for example:  a Christian God, forms of nature, energy...or other things that people may choose to believe in.  When answering these questions, please refer to your own personal belief systems.</em><br><br>"
->>>>>>> InDev2
     }
 
 
