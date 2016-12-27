@@ -13,7 +13,9 @@
       "2",
       "3",
       "4",
-      "5"
+      "5",
+      "6",
+      "7"
     ]
   },
   "sheetlogic": [
@@ -40,6 +42,16 @@
     {
       "sheetid": "5",
       "title": "Re-Entry Needs 1",
+      "description": ""
+    },
+    {
+      "sheetid": "6",
+      "title": "Re-Entry Needs 2",
+      "description": ""
+    },
+    {
+      "sheetid": "7",
+      "title": "Re-Entry Needs 3",
       "description": ""
     }
   ],
@@ -2153,6 +2165,155 @@
           "value": "1"
         }
       ]
+    },
+    {
+      "eid": "501a",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "501",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "sheetid": "5",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "PNgethin",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Did you receive help?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "501b",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "501a",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "sheetid": "5",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "PNathin",
+      "controlmodule": "radiolist",
+      "other": true,
+      "otherPrompt": "<label>Please specify other</label>",
+      "prompt": "<label>Where did you receive help?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Probation/parole office (but someone other than a Social Service Clinician, SSC)",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Social service clinician (SSC)",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Community substance abuse treatment provider (inpatient)",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Community substance abuse treatment provider (outpatient)",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Doctor's office or private clinic",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Community/migrant/rural clinic or health center",
+          "value": "6"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "County/city/public hospital outpatient clinic",
+          "value": "7"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "Private/other hospital outpatient clinic",
+          "value": "8"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "County/city/public hospital inpatient",
+          "value": "9"
+        },
+        {
+          "arrayid": 9,
+          "prompt": "Private/other hospital inpatient",
+          "value": "10"
+        },
+        {
+          "arrayid": 10,
+          "prompt": "Hospital emergency room",
+          "value": "11"
+        },
+        {
+          "arrayid": 11,
+          "prompt": "Psychiatric hospital or clinic",
+          "value": "12"
+        },
+        {
+          "arrayid": 12,
+          "prompt": "Outreach, health education, or prevention program",
+          "value": "13"
+        },
+        {
+          "arrayid": 13,
+          "prompt": "Home",
+          "value": "14"
+        },
+        {
+          "arrayid": 14,
+          "prompt": "Prison or jail staff",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "eid": "reentry-boil2",
+      "sheetid": "6",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "Re-Entry Needs 2",
+      "controlmodule": "boilerplate",
+      "prompt": "<h1>Re-Entry Needs 2</h1>",
+      "content": ""
+    },
+    {
+      "eid": "reentry-boil3",
+      "sheetid": "7",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "Re-Entry Needs 3",
+      "controlmodule": "boilerplate",
+      "prompt": "<h1>Re-Entry Needs 3</h1>",
+      "content": ""
     },
 
 
