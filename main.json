@@ -2315,6 +2315,262 @@
       "prompt": "<h1>Re-Entry Needs 3</h1>",
       "content": ""
     },
+    {
+      "eid": "707",
+      "sheetid": "7",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "ACAuseex",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Have you tried to get insurance through the Federal Health Insurance Exchange, which was created by the Affordable Care Act (ACA) since your release? The Federal Health Insurance Exchange is sometimes known as the Health Insurance Marketplace or “Obamacare,” and is accessed online through Healthcare.gov.</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "708",
+      "sheetid": "7",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "haveinsr",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Do you currently have health insurance?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "709",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "708",
+            "comparator": "===",
+            "value": "0"
+          }
+        ]
+      },
+      "sheetid": "7",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "getinsr",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Are you currently trying to get health insurance?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "710",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "708",
+            "comparator": "===",
+            "value": "0"
+          }
+        ]
+      },
+      "sheetid": "7",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "ynoinsr",
+      "controlmodule": "checklist",
+      "prompt": "<label>Are any of the following statements reasons why you haven’t obtained health insurance since your release from prison?</label><br><em>(Read list and check all that apply)</em>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "don't know how to use the Health Insurance Exchange",
+          "value": "noknexch"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "not a priority",
+          "value": "nopriority"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "did not want health insurance",
+          "value": "dontwant"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "lack of personal identification/documents (e.g., driver’s license, social security card) ",
+          "value": "noID"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "didn’t know how to get health insurance",
+          "value": "nokninsr"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "the process to get insurance is too complicated",
+          "value": "toohard"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "the process to get insurance takes too long",
+          "value": "toolong"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "fear of being treated rudely or unkindly",
+          "value": "fearrude"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "don't trust doctors",
+          "value": "notrustdoc"
+        },
+        {
+          "arrayid": 9,
+          "prompt": "didn’t think I would qualify",
+          "value": "noqualify"
+        },
+        {
+          "arrayid": 10,
+          "prompt": "too expensive",
+          "value": "toocostly"
+        },
+        {
+          "arrayid": 11,
+          "prompt": "confidentiality (privacy)",
+          "value": "privacy"
+        },
+        {
+          "arrayid": 12,
+          "prompt": "currently trying to get health insurance",
+          "value": "tryingnow"
+        }
+      ]
+    },
+    {
+      "eid": "711",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "708",
+            "comparator": "===",
+            "value": "0"
+          }
+        ]
+      },
+      "sheetid": "7",
+      "poolid": "rapproject",
+      "sortIndex": 25,
+      "title": "ynoinsrO",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Are there any other reasons why did you didn’t get health insurance?</label><br><em>(open ended)</em>"
+    },
+    {
+      "eid": "712",
+      "sheetid": "7",
+      "poolid": "rapproject",
+      "sortIndex": 30,
+      "title": "insrnow",
+      "controlmodule": "radiolist",
+      "prompt": "<label>What type of medical insurance do you currently have? Select one.</label>",
+      "other": true,
+      "otherPrompt": "Please specify other",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Insurance through your employer",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Insurance through your partner’s employer",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Insurance you purchased through the Health Insurance Exchange (not including Medicaid/Medicare)",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Other private insurance (self-employed)",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Medicaid (Medical card, Passport)",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Medicare",
+          "value": "6"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "VA/Tricare",
+          "value": "7"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "Insurance through parents or parent’s employer",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "eid": "713",
+      "sheetid": "7",
+      "poolid": "rapproject",
+      "sortIndex": 35,
+      "title": "daysinsr",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How long were you on the street before you got health insurance (days)?</label>"
+    }
+
 
 
 
