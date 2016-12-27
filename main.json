@@ -122,21 +122,26 @@
           "value": "98"
         }
       ]
+      
     },
     {
       "eid": "102a",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "102",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
       "sheetid": "2",
       "poolid": "rapproject",
       "sortIndex": 15,
       "title": "ParoleCy",
       "controlmodule": "radiolist",
       "prompt": "<label>If yes, in what county do you report to your probabtion officer (PO)?</label>",
-      "filter": {
-        "details": {
-          "key": "102",
-          "value": "Yes"
-        }
-      },
       "arrayPrompts":[
         {
           "arrayid": 0,
@@ -513,6 +518,16 @@
     },
     {
       "eid": "105a",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "105",
+            "comparator": "===",
+            "value": "6"
+          }
+        ]
+      },
       "sheetid": "2",
       "poolid": "rapproject",
       "sortIndex": 35,
@@ -527,7 +542,7 @@
       "sortIndex": 40,
       "title": "hispanic",
       "controlmodule": "radiolist",
-      "prompt": "<label>What race do you consider yourself to be?</label>",
+      "prompt": "<label>Are you Hispanic?</label>",
       "arrayPrompts":[
         {
           "arrayid": 0,
@@ -652,7 +667,7 @@
         },
         {
           "arrayid": 3,
-          "prompt": "Other (specify)",
+          "prompt": "Other",
           "value": "4"
         },
         {
@@ -669,6 +684,16 @@
     },
     {
       "eid": "109a",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "109",
+            "comparator": "===",
+            "value": "4"
+          }
+        ]
+      },
       "sheetid": "2",
       "poolid": "rapproject",
       "sortIndex": 60,
@@ -995,6 +1020,16 @@
     },
     {
       "eid": "119b",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "119a",
+            "comparator": "===",
+            "value": "5"
+          }
+        ]
+      },
       "sheetid": "2",
       "poolid": "rapproject",
       "sortIndex": 150,
@@ -1107,6 +1142,16 @@
     },
     {
       "eid": "122a",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "122",
+            "comparator": "===",
+            "value": "6"
+          }
+        ]
+      },
       "sheetid": "2",
       "poolid": "rapproject",
       "sortIndex": 170,
@@ -1182,6 +1227,16 @@
     },
     {
       "eid": "123a",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "123",
+            "comparator": "===",
+            "value": "11"
+          }
+        ]
+      },
       "sheetid": "2",
       "poolid": "rapproject",
       "sortIndex": 180,
@@ -1378,6 +1433,16 @@
     },
     {
       "eid": "127a",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "127",
+            "comparator": "===",
+            "value": "11"
+          }
+        ]
+      },
       "sheetid": "2",
       "poolid": "rapproject",
       "sortIndex": 205,
@@ -1677,6 +1742,16 @@
     },
     {
       "eid": "202a",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "202",
+            "comparator": "===",
+            "value": "18"
+          }
+        ]
+      },
       "sheetid": "3",
       "poolid": "rapproject",
       "sortIndex": 10,
