@@ -141,7 +141,7 @@
       "sortIndex": 15,
       "title": "ParoleCy",
       "controlmodule": "radiolist",
-      "prompt": "<label>If yes, in what county do you report to your probabtion officer (PO)?</label>",
+      "prompt": "<label>In what county do you report to your probabtion officer (PO)?</label>",
       "arrayPrompts":[
         {
           "arrayid": 0,
@@ -427,7 +427,7 @@
       "sortIndex": 20,
       "title": "birthdte",
       "controlmodule": "shorttext",
-      "prompt": "<label>What is your birthdate? (Note: Enter in mm/dd/yyyy. Enter year 2098 is if he or she refuses to answer.)</label>"
+      "prompt": "<label>What is your birthdate?</label><br><em>(Note: Enter in mm/dd/yyyy. Enter year 2098 is if he or she refuses to answer.)</em>"
     },
     {
       "eid": "104",
@@ -533,7 +533,7 @@
       "sortIndex": 35,
       "title": "raceothr",
       "controlmodule": "shorttext",
-      "prompt": "<label>Please specify Other</label>"
+      "prompt": "<label>Please specify \"Other\"</label>"
     },
     {
       "eid": "106",
@@ -699,7 +699,7 @@
       "sortIndex": 60,
       "title": "sexprefo",
       "controlmodule": "shorttext",
-      "prompt": "<label>Please specify Other</label>"
+      "prompt": "<label>Please specify \"Other\"</label>"
     },
     {
       "eid": "110",
@@ -729,6 +729,16 @@
     },
     {
       "eid": "110a",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "110",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
       "sheetid": "2",
       "poolid": "rapproject",
       "sortIndex": 70,
@@ -738,6 +748,16 @@
     },
     {
       "eid": "110b",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "110",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
       "sheetid": "2",
       "poolid": "rapproject",
       "sortIndex": 75,
@@ -747,6 +767,16 @@
     },
     {
       "eid": "110c",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "110",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
       "sheetid": "2",
       "poolid": "rapproject",
       "sortIndex": 80,
@@ -756,6 +786,16 @@
     },
     {
       "eid": "110d",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "110",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
       "sheetid": "2",
       "poolid": "rapproject",
       "sortIndex": 85,
@@ -765,6 +805,16 @@
     },
     {
       "eid": "110e",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "110",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
       "sheetid": "2",
       "poolid": "rapproject",
       "sortIndex": 90,
@@ -774,6 +824,16 @@
     },
     {
       "eid": "110f",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "110",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
       "sheetid": "2",
       "poolid": "rapproject",
       "sortIndex": 95,
@@ -809,23 +869,33 @@
       "arrayPrompts":[
         {
           "arrayid": 0,
-          "prompt": "no",
+          "prompt": "No",
           "value": "0"
         },
         {
           "arrayid": 1,
-          "prompt": "yes",
+          "prompt": "Yes",
           "value": "1"
         },
         {
           "arrayid": 2,
-          "prompt": "refuse to answer",
+          "prompt": "Refuse to Answer",
           "value": "98"
         }
       ]
     },
     {
       "eid": "112",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "111",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
       "sheetid": "2",
       "poolid": "rapproject",
       "sortIndex": 105,
@@ -835,6 +905,16 @@
     },
     {
       "eid": "113",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "111",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
       "sheetid": "2",
       "poolid": "rapproject",
       "sortIndex": 110,
@@ -929,7 +1009,7 @@
       "sortIndex": 125,
       "title": "zip",
       "controlmodule": "shorttext",
-      "prompt": "<label>What zip code do you live in?</label>"
+      "prompt": "<label>What zip code do you live in?</label><br><em>(Don't Know-999997 Refuse to Answer-999998)</em>"
     },
     {
       "_comment": "turn this into select/radio if carrie gives us a list of counties?",
@@ -984,6 +1064,16 @@
     },
     {
       "eid": "119a",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "119",
+            "comparator": "===",
+            "value": "4"
+          }
+        ]
+      },
       "sheetid": "2",
       "poolid": "rapproject",
       "sortIndex": 145,
@@ -1013,7 +1103,7 @@
         },
         {
           "arrayid": 4,
-          "prompt": "Other housed",
+          "prompt": "Other",
           "value": "5"
         }
       ]
@@ -1096,6 +1186,16 @@
     },
     {
       "eid": "122",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "121",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
       "sheetid": "2",
       "poolid": "rapproject",
       "sortIndex": 165,
@@ -1242,7 +1342,7 @@
       "sortIndex": 180,
       "title": "emp3mOth",
       "controlmodule": "shorttext",
-      "prompt": "<label>If other, please specify. (e.g., Military, KTAP, or other assistance program)</label>"
+      "prompt": "<label>Please specify. (e.g., Military, KTAP, or other assistance program)</label>"
     },
     {
       "_comment": "make this a numeric entry if possible",
@@ -1448,7 +1548,7 @@
       "sortIndex": 205,
       "title": "emp1mOth",
       "controlmodule": "shorttext",
-      "prompt": "<label>If other, please specify. (e.g., Military, KTAP, or other assistance program)</label>"
+      "prompt": "<label>If Other, please specify. (e.g., Military, KTAP, or other assistance program)</label>"
     },
     {
       "eid": "128",
@@ -1631,6 +1731,16 @@
     },
     {
       "eid": "202",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "201",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
       "sheetid": "3",
       "poolid": "rapproject",
       "sortIndex": 5,
@@ -1761,7 +1871,27 @@
     },
     {
       "eid": "203",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "201",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
       "sheetid": "3",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "201",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
       "poolid": "rapproject",
       "sortIndex": 15,
       "title": "relgood",
@@ -1792,6 +1922,16 @@
     },
     {
       "eid": "204",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "201",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
       "sheetid": "3",
       "poolid": "rapproject",
       "sortIndex": 20,
@@ -1821,6 +1961,32 @@
       "sheetid": "3",
       "poolid": "rapproject",
       "sortIndex": 25,
+      "title": "relspirt",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Do you consider yourself to be spiritual?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "206",
+      "sheetid": "3",
+      "poolid": "rapproject",
+      "sortIndex": 26,
       "title": "relstrng",
       "controlmodule": "radiolist",
       "prompt": "<label>Do you consider your religious or spiritual beliefs to be very strong?</label>",
@@ -1843,7 +2009,7 @@
       ]
     },
     {
-      "eid": "206",
+      "eid": "207",
       "sheetid": "3",
       "poolid": "rapproject",
       "sortIndex": 30,
@@ -1869,7 +2035,7 @@
       ]
     },
     {
-      "eid": "207",
+      "eid": "208",
       "sheetid": "3",
       "poolid": "rapproject",
       "sortIndex": 35,
@@ -1902,8 +2068,55 @@
       "title": "Spiritual Well-Being Scale",
       "controlmodule": "boilerplate",
       "prompt": "<h3>Spiritual Well-Being Scale</h3>",
-      "content": "<br><em>READ</em><br><br><em>For each of the following statements, please indicate the extent of your agreement or disagreement as it describes your personal spiritual experience.  When I refer to a \"higher power,\" please understand that that could mean different things to different people, for example:  a Christian God, forms of nature, energy...or other things that people may choose to believe in.  When answering these questions, please refer to your own personal belief systems.</em><br><br>"
-    }
+      "content": "<br><em>For each of the following statements, please indicate the extent of your agreement or disagreement as it describes your personal spiritual experience.  When I refer to a \"higher power,\" please understand that that could mean different things to different people, for example:  a Christian God, forms of nature, energy...or other things that people may choose to believe in.  When answering these questions, please refer to your own personal belief systems.</em><br><br>"
+    },
+    {
+      "eid": "209",
+      "sheetid": "4",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "relgood",
+      "controlmodule": "radiolist",
+      "prompt": "<label>I don't find much satisfaction in private prayer.  (Choose one)</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Strongly Disagree",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Disagree",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Moderatley Disagree",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Moderatley Agree",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Moderatley Agree",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Moderatley Strongly Agree",
+          "value": "6"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "Refuse to Answer",
+          "value": "8"
+        }
+
+      ]
+    },
 
 
 
