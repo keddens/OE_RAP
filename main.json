@@ -2559,7 +2559,96 @@
       "title": "daysinsr",
       "controlmodule": "shorttext",
       "prompt": "<label>How long were you on the street before you got health insurance (days)?</label>"
-    }
+    },
+    {
+      "eid": "714",
+      "sheetid": "7",
+      "poolid": "rapproject",
+      "sortIndex": 40,
+      "title": "SSCinsr",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Did a social service clinician help you obtain health insurance?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "715",
+      "sheetid": "7",
+      "poolid": "rapproject",
+      "sortIndex": 45,
+      "title": "helpinsr",
+      "controlmodule": "checklist",
+      "prompt": "<label>Who else helped you obtain health insurance?</label><br><em>(Read list and check all that apply)</em>",
+      "other": true,
+      "otherPrompt": "Please specify other",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Husband/Wife",
+          "value": "spouse"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Girl or boyfriend/partner, significant other ",
+          "value": "partner"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Parent or step-parent",
+          "value": "parent"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Daughter/Son",
+          "value": "child"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Sibling, step-sibling, or half—sibling",
+          "value": "sibling"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Other family (e.g., Uncle/Aunt, cousin) ",
+          "value": "family"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "Friend",
+          "value": "friend"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "fear of being treated rudely or unkindly",
+          "value": "fearrude"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "Health care professional (e.g., doctor, therapist, social worker)",
+          "value": "hcpro"
+        },
+        {
+          "arrayid": 9,
+          "prompt": "Prison or jail staff ",
+          "value": "jailstaff"
+        }
+      ]
+    },
 
 
 
