@@ -15,7 +15,9 @@
       "4",
       "5",
       "6",
-      "7"
+      "7",
+      "8",
+      "9"
     ]
   },
   "sheetlogic": [
@@ -52,6 +54,16 @@
     {
       "sheetid": "7",
       "title": "Re-Entry Needs 3",
+      "description": ""
+    },
+    {
+      "sheetid": "8",
+      "title": "Substance Abuse Treatment 1",
+      "description": ""
+    },
+    {
+      "sheetid": "9",
+      "title": "Substance Abuse Treatment 2",
       "description": ""
     }
   ],
@@ -2649,7 +2661,190 @@
         }
       ]
     },
-
+    {
+      "eid": "801",
+      "sheetid": "8",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "refsatx",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Were you referred to substance abuse treatment in the community following your release?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "802",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "801",
+            "comparator": "===",
+            "value": "0"
+          }
+        ]
+      },
+      "sheetid": "8",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "whynoref",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Why were you not referred to substance abuse treatment in the community following your release? (open ended)</label>"
+    },
+    {
+      "eid": "803",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "801",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "sheetid": "8",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "whyref",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Why were you referred to substance abuse treatment in the community following your release? </label>"
+    },
+    {
+      "eid": "804",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "801",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "sheetid": "8",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "satxtype",
+      "controlmodule": "checklist",
+      "prompt": "<label>What type of substance abuse treatment was it? (check all that apply)</label>",
+      "other": true,
+      "otherPrompt": "Please specify other",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Inpatient/Residential",
+          "value": "inpt"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Outpatient",
+          "value": "outpt"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Medication-assisted treatment",
+          "value": "MAT"
+        }
+      ]
+    },
+    {
+      "eid": "805",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "801",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "sheetid": "8",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "satxpart",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Did you participate in the substance abuse treatment program to which you were referred?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "_comment:": "possible duplicate",
+      "eid": "806",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "805",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "sheetid": "8",
+      "poolid": "rapproject",
+      "sortIndex": 25,
+      "title": "satxpart",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How long were you on the street before you started substance abuse treatment (days)?</label>"
+    },
+    {
+      "eid": "807",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "805",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "sheetid": "8",
+      "poolid": "rapproject",
+      "sortIndex": 30,
+      "title": "satxdone",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Did you complete treatment?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Still in treatment",
+          "value": "2"
+        }
+      ]
+    }
 
 
 
