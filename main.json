@@ -12,7 +12,8 @@
       "1",
       "2",
       "3",
-      "4"
+      "4",
+      "5"
     ]
   },
   "sheetlogic": [
@@ -34,6 +35,11 @@
     {
       "sheetid": "4",
       "title": "Spiritual Well-Being Scale",
+      "description": ""
+    },
+    {
+      "sheetid": "5",
+      "title": "Re-Entry Needs 1",
       "description": ""
     }
   ],
@@ -2115,6 +2121,37 @@
           "value": "8"
         }
 
+      ]
+    },
+    {
+      "eid": "reentry-boil",
+      "sheetid": "5",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "ReentryBoil",
+      "controlmodule": "boilerplate",
+      "prompt": "<h1>Re-Entry Needs 1</h1>",
+      "content": "<p>When you were released from prison, which of the following areas did you need help with?  Please indicate whether you needed help in this area, whether or not you received help, and where you received help from.</p>"
+    },
+    {
+      "eid": "501",
+      "sheetid": "5",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "PNobthin",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Did you need help with obtaining health insurance when you left prison?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
       ]
     },
 
