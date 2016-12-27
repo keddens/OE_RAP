@@ -2839,12 +2839,103 @@
           "value": "1"
         },
         {
-          "arrayid": 1,
+          "arrayid": 2,
           "prompt": "Still in treatment",
           "value": "2"
         }
       ]
-    }
+    },
+    {
+      "eid": "908",
+      "sheetid": "9",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "ertx",
+      "controlmodule": "checklist",
+      "prompt": "<label>During the past 3 months did you receive Emergency Room Treatment for:</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Physical health complaints",
+          "value": "physical"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Mental or emotional health difficulties",
+          "value": "mental"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Alcohol or substance abuse",
+          "value": "substance"
+        }
+      ]
+    },
+    {
+      "eid": "909",
+      "sheetid": "9",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "ertx3mo",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Altogether how many times did you receive emergency room treatment in the past 3 months for these health issues?</label>"
+    },
+    {
+      "eid": "910",
+      "sheetid": "9",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "ertx1mo",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Altogether how many times did you receive emergency room treatment in the past 30 days for these health issues?</label>"
+    },
+    {
+      "eid": "911",
+      "sheetid": "9",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "inptx",
+      "controlmodule": "checklist",
+      "prompt": "<label>During the past 3 months did you receive <u>Inpatient Treatment for:</u></label><br><em>(e.g., did you spend the night in a hospital in the past year for detox, drug treatment, inpatient psychiatric treatment, or other medical hospitalization)</em>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Physical health complaints",
+          "value": "physical"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Mental or emotional health difficulties",
+          "value": "mental"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Alcohol or substance abuse",
+          "value": "substance"
+        }
+      ]
+    },
+    {
+      "eid": "912",
+      "sheetid": "9",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "inptx3mo",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Altogether how many times did you receive emergency room treatment in the past 3 months for these health issues?</label>"
+    },
+    {
+      "eid": "913",
+      "sheetid": "9",
+      "poolid": "rapproject",
+      "sortIndex": 25,
+      "title": "inptx1mo",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Altogether how many times did you receive emergency room treatment in the past 30 days for these health issues?</label>"
+    },
+
+
+
 
 
 
