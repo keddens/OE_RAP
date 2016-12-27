@@ -2932,7 +2932,28 @@
       "title": "inptx1mo",
       "controlmodule": "shorttext",
       "prompt": "<label>Altogether how many times did you receive emergency room treatment in the past 30 days for these health issues?</label>"
-    }
+    },
+    {
+      "eid": "914",
+      "sheetid": "9",
+      "poolid": "rapproject",
+      "sortIndex": 30,
+      "title": "inptsatx",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Did you attend a residential/inpatient treatment program for substance use in the past 3 months?</label><br><em>(non-medical detox, 30-day treatment program, transitional housing)</em>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
 
 
 
