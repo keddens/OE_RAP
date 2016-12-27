@@ -1900,16 +1900,6 @@
         ]
       },
       "sheetid": "3",
-      "conditions": {
-        "comparator": "&&",
-        "values": [
-          {
-            "eid": "201",
-            "comparator": "===",
-            "value": "1"
-          }
-        ]
-      },
       "poolid": "rapproject",
       "sortIndex": 15,
       "title": "relgood",
