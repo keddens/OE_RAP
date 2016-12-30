@@ -24,7 +24,8 @@
       "13",
       "14",
       "15",
-      "16"
+      "16",
+      "17"
     ]
   },
   "sheetlogic": [
@@ -106,6 +107,11 @@
     {
       "sheetid": "16",
       "title": "Alcohol/Drug Use Status 1",
+      "description": ""
+    },
+    {
+      "sheetid": "17",
+      "title": "Alcohol/Drug Use Status 2",
       "description": ""
     }
   ],
@@ -4546,7 +4552,7 @@
           "arrayid": 3,
           "prompt": "Don't Know",
           "value": "97"
-        }
+        },
         {
           "arrayid": 4,
           "prompt": "Refuse to Answer",
@@ -4681,7 +4687,419 @@
       "controlmodule": "boilerplate",
       "prompt": "<strong>Now I am going to ask you some questions about your substance use in the past 3 months. I want to remind you that anything you say is confidential.</strong>",
       "content": "<p><em>Note: Even if a participant reports no use of illegal drugs in the past 3 months ask about each specific drug. Say something like “I know you indicated that you have not used illegal drugs in the past three months but I still need to read through the list.” Also, the unprescribed use of prescription medication or misuse of prescribed medication (e.g., taking more than prescribed) should be counted as the use of illegal drugs.<em></p>"
+    },
+    {
+      "eid": "druguseboil1extra",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "",
+      "controlmodule": "boilerplate",
+      "prompt": "<p>During the past <strong>3 months</strong>, how many <strong>days</strong> did you use....?</p>",
+      "content": ""
+    },
+    {
+      "eid": "1601",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "3mocigs",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Cigarettes, cigars, smoking or smokeless tobacco</strong></label>"
+    },
+    {
+      "eid": "1602",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "3moecigs",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Electronic Cigarette</strong> (e-cig, vape)</label>"
+    },
+    {
+      "eid": "1603",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "3moetoh",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Alcohol</strong>-beer, wine, liquor, grain alcohol</label>"
+    },
+    {
+      "eid": "1604",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 25,
+      "title": "3modrunk",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Alcohol to intoxication</strong></label>"
+    },
+    {
+      "eid": "1605",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 30,
+      "title": "3mocoke",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Cocaine/crack</strong>-Cocaine crystal, free-base, or rock cocaine</label>"
+    },
+    {
+      "eid": "1606",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 35,
+      "title": "3moweed",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Marijuana</strong>-Hashish/Pot</label>"
+    },
+    {
+      "eid": "1607",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 40,
+      "title": "3mosmack",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Heroin (smack, H, junk, skag)</strong></label>"
+    },
+    {
+      "eid": "1608",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 45,
+      "title": "3moperct",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Percocet/Percodan/Oxycodone</strong></label>"
+    },
+    {
+      "eid": "1609",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 50,
+      "title": "3modrvon",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Darvon</strong></label>"
+    },
+    {
+      "eid": "1610",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 55,
+      "title": "3modlaud",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Dilaudid</strong></label>"
+    },
+    {
+      "eid": "1611",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 60,
+      "title": "3momrphn",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Morphine</strong></label>"
+    },
+    {
+      "eid": "1612",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 65,
+      "title": "3mocodne",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Codeine</strong></label>"
+    },
+    {
+      "eid": "1613",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 70,
+      "title": "3motylnl",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Tylenol 2,3,4</strong></label>"
+    },
+    {
+      "eid": "1614",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 75,
+      "title": "3mooxy",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Oxycontin</strong></label>"
+    },
+    {
+      "eid": "1615",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 80,
+      "title": "3molortb",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Lortab, hydrocodone</strong></label>"
+    },
+    {
+      "eid": "1616",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 85,
+      "title": "3modemrl",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Demerol</strong></label>"
+    },
+    {
+      "eid": "1617",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 90,
+      "title": "3moultrm",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Ultram/Tramadol</strong></label>"
+    },
+    {
+      "eid": "1618",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 95,
+      "title": "3mofntyl",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Fentanyl</strong></label>"
+    },
+    {
+      "eid": "1619",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 100,
+      "title": "3moopana",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Opana</strong></label>"
+    },
+    {
+      "eid": "1620",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 105,
+      "title": "3moroxis",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>IR-30s</strong>(Roxies)</label>"
+    },
+    {
+      "eid": "1621",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 110,
+      "title": "3moothop",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Other Opiates</strong></label>"
+    },
+    {
+      "eid": "1622",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 115,
+      "title": "3mooptyp",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1611",
+            "comparator": ">",
+            "value": "0"
+          }
+        ]
+      },
+      "prompt": "<label><strong>Specify Other Opiate</strong></label>"
+    },
+    {
+      "eid": "1623",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 120,
+      "title": "3momthdn",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Non-prescription Methadone</strong></label>"
+    },
+    {
+      "eid": "1624",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 125,
+      "title": "3mosubox",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Non-prescription Suboxone/Zubsolv or buprenorphine</strong></label>"
+    },
+    {
+      "eid": "1625",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 130,
+      "title": "3mopsych",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Hallucinogens/psychedelics</strong>-PCP, Other Hallucinogens/Psychedelics, LSD, Mushrooms, Mescaline</label>"
+    },
+    {
+      "eid": "1626",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 135,
+      "title": "3mometh",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Methanphetamines, crank</strong></label>"
+    },
+    {
+      "eid": "1627",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 140,
+      "title": "3mooamph",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Other amphetamines, speed</strong></label>"
+    },
+    {
+      "eid": "1628",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 145,
+      "title": "3momdma",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>MDMA, Ecstasy</strong></label>"
+    },
+    {
+      "eid": "1629",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 150,
+      "title": "3moritln",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Ritalin, Concerta, Strattera, Aderall</strong></label>"
+    },
+    {
+      "eid": "1630",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 155,
+      "title": "3mobarbt",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Barbiturates</strong>( Mephobarbital (Mebacut); and pentobarbital sodium (Nemburtal)</label>"
+    },
+    {
+      "eid": "1631",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 160,
+      "title": "3mobenzo",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Benzodiazepines:</strong>Diazepam (Valium); Alpeazolam (Xanax); Triazolam (Halcion); and Estasolam</label>"
+    },
+    {
+      "eid": "1632",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 165,
+      "title": "3moghb",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Non-prescription GHB</strong>(known as Grievous Bodily Harm; Liquid Ecstasy; and Georgia Home Boy)</label>"
+    },
+    {
+      "eid": "1633",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 170,
+      "title": "3moktmne",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Ketamine</strong>(known as Special K or Vitamin K)</label>"
+    },
+    {
+      "eid": "1634",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 175,
+      "title": "3morelax",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Muscle relaxants</strong></label>"
+    },
+    {
+      "eid": "1635",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 180,
+      "title": "3mootrnq",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Other tranquilizers, downers, sedatives or hypnotics</strong></label>"
+    },
+    {
+      "eid": "1636",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 185,
+      "title": "3moinhle",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong> Inhalants</strong>—poppers, Rush, Whippets (paint, glue, aerosol can spray)</label>"
+    },
+    {
+      "eid": "1637",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 190,
+      "title": "3mosynmj",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Synthetic marijuana (Spice, K2, Herbal Incense)</strong></label>"
+    },
+    {
+      "eid": "1638",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 195,
+      "title": "3moflaka",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Flakka</strong></label>"
+    },
+    {
+      "eid": "1639",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 200,
+      "title": "3mokratm",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Kratom</strong></label>"
+    },
+    {
+      "eid": "1640",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 205,
+      "title": "3mobaths",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Bath salts</strong>(Vanilla Sky, Ivory, Wave)</label>"
+    },
+    {
+      "eid": "1641",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 210,
+      "title": "3moodrug",
+      "controlmodule": "shorttext",
+      "prompt": "<label><strong>Other Illegal Drugs</strong>(any other drugs not yet mentioned)</label>"
+    },
+    {
+      "eid": "nodrugsboil",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 215,
+      "title": "NoSubstanceUseBoilerplate",
+      "controlmodule": "boilerplate",
+      "prompt": "<label><strong>NOTE FOR INTERVIEWER:</strong> If no substance use is reported, skip to page 19, Sexual Behaviors.</label>",
+      "content": ""
+    },
+    {
+      "eid": "druguseboil2",
+      "sheetid": "17",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "AlcoholDrugUseBoilerplate2",
+      "controlmodule": "boilerplate",
+      "prompt": "<strong>You indicated that you have used substances in the past 3 months since your release from prison:</strong>",
+      "content": ""
     }
+
+
+    
     
 
 
