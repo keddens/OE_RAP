@@ -22,7 +22,8 @@
       "11",
       "12",
       "13",
-      "14"
+      "14",
+      "15"
     ]
   },
   "sheetlogic": [
@@ -94,6 +95,11 @@
     {
       "sheetid": "14",
       "title": "Substance Abuse Treatment 7",
+      "description": ""
+    },
+    {
+      "sheetid": "15",
+      "title": "Substance Abuse Treatment 8",
       "description": ""
     }
   ],
@@ -3725,7 +3731,7 @@
           "value": "1"
         },
         {
-          "arrayid": 3,
+          "arrayid": 2,
           "prompt": "Refuse to Answer",
           "value": "98"
         }
@@ -3751,7 +3757,7 @@
           "value": "1"
         },
         {
-          "arrayid": 3,
+          "arrayid": 2,
           "prompt": "Refuse to Answer",
           "value": "98"
         }
@@ -3972,7 +3978,7 @@
           "value": "1"
         },
         {
-          "arrayid": 3,
+          "arrayid": 2,
           "prompt": "Refuse to Answer",
           "value": "98"
         }
@@ -4074,7 +4080,232 @@
           "value": "1"
         },
         {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "1450",
+      "sheetid": "14",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "buprn3mo",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Did you go to a doctor or a treatment provider to receive buprenorphine (also known as Suboxone and Zubsolv) for the treatment of opioid dependence in the past 3 months?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "1451",
+      "sheetid": "14",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "12stp3mo",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Have you been to AA, NA or other self-help group meetings for an alcohol or drug problem in the past 3 months?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "1452",
+      "sheetid": "14",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "12stprle",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1451",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>Was your AA/NA attendance a requirement of your parole?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "1453",
+      "sheetid": "14",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "12stdays",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1451",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>How many days in the past 30 days have you attended AA, NA or other self-help group meetings?</label>"
+    },
+    {
+      "eid": "1454",
+      "sheetid": "14",
+      "poolid": "rapproject",
+      "sortIndex": 25,
+      "title": "12sthelp",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1451",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>When you do attend, how often do you find the meetings to be helpful?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Never",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Rarely",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Sometimes",
+          "value": "2"
+        },
+        {
           "arrayid": 3,
+          "prompt": "Often",
+          "value": "3"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Always",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "eid": "1455",
+      "sheetid": "14",
+      "poolid": "rapproject",
+      "sortIndex": 30,
+      "title": "12stspnr",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1451",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>Do you have an AA or NA sponsor?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "1456",
+      "sheetid": "14",
+      "poolid": "rapproject",
+      "sortIndex": 35,
+      "title": "12sttksp",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1455",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>Have you had contact with your AA or NA sponsor in the past 30 days?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
           "prompt": "Refuse to Answer",
           "value": "98"
         }
