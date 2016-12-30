@@ -3336,6 +3336,346 @@
       "controlmodule": "boilerplate",
       "prompt": "<p>Next, we would like to specifically discuss one type of medication for the treatment of opioid dependence called Vivitrol® (also known as extended release naltrexone). It is administered through a monthly injection.  As part of the Kentucky’s response to the opioid epidemic, Senate Bill 192 was passed in 2015 to give funds for the DOC to offer Vivitrol® to eligible inmates prior to release from prison.</p>",
       "content": ""
+    },
+    {
+      "eid": "1129",
+      "sheetid": "11",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "vveduc",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Did you receive any educational materials on Vivitrol &reg; while you were incarcerated?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "1130",
+      "sheetid": "11",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "vvtalk",
+      "controlmodule": "checklist",
+      "prompt": "<label>Did any prison staff talk with you about Vivitrol? (Read list and check all that apply)</label><br><em>(Read list and check all that apply)</em>",
+      "other": true,
+      "otherPrompt": "Please specify other",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "substance abuse treatment staff ",
+          "value": "satxstaff"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "medical staff",
+          "value": "medstaff"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "correctional officers",
+          "value": "CO"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "social worker/social service clinician",
+          "value": "swssc"
+        }
+      ]
+    },
+    {
+      "eid": "1131",
+      "sheetid": "11",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "vvask",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Were you able to ask prison staff questions about Vivitrol?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "1132",
+      "sheetid": "11",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "vvstffsp",
+      "controlmodule": "radiolist",
+      "prompt": "<label>How much do you agree with this statement: Prison <u>substance abuse treatment staff</u> are supportive of the use of Vivitrol?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Strongly Disagree",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Disagree",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Moderately Disagree",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Moderately Agree",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Agree",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Strongly Disagree",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "eid": "1133",
+      "sheetid": "11",
+      "poolid": "rapproject",
+      "sortIndex": 25,
+      "title": "vvmedsp",
+      "controlmodule": "radiolist",
+      "prompt": "<label>How much do you agree with this statement: Prison <u>medical staff</u> are supportive of the use of Vivitrol?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Strongly Disagree",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Disagree",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Moderately Disagree",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Moderately Agree",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Agree",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Strongly Disagree",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "eid": "1134",
+      "sheetid": "11",
+      "poolid": "rapproject",
+      "sortIndex": 30,
+      "title": "vvinmtsp",
+      "controlmodule": "radiolist",
+      "prompt": "<label>How much do you agree with this statement:<u>Other inmates</u> who are supportive of the use of Vivitrol?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Strongly Disagree",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Disagree",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Moderately Disagree",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Moderately Agree",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Agree",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Strongly Disagree",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "eid": "1135",
+      "sheetid": "11",
+      "poolid": "rapproject",
+      "sortIndex": 35,
+      "title": "vvinmtnk",
+      "controlmodule": "shorttext",
+      "prompt": "<label>What do other inmates in substance abuse treatment think of Vivitrol? (open ended)</label><br><em>(Probes: Describe what they like and don’t like about Vivitrol? Describe what concerns they have about taking Vivitrol while in prison? While in the community?)</em>"
+    },
+    {
+      "eid": "1136",
+      "sheetid": "11",
+      "poolid": "rapproject",
+      "sortIndex": 40,
+      "title": "vvinjinc",
+      "controlmodule": "radiolist",
+      "prompt": "<label> Did you receive a Vivitrol injection while incarcerated?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Don't Know",
+          "value": "97"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "1137",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1136",
+            "comparator": "===",
+            "value": "0"
+          }
+        ]
+      },
+      "sheetid": "11",
+      "poolid": "rapproject",
+      "sortIndex": 45,
+      "title": "vvinjwhy",
+      "controlmodule": "shorttext",
+      "prompt": "<label>If no, why did you not get a Vivitrol injection while incarcerated? (open ended)</label>"
+    },
+    {
+      "eid": "1138",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1136",
+            "comparator": "===",
+            "value": "0"
+          }
+        ]
+      },
+      "sheetid": "11",
+      "poolid": "rapproject",
+      "sortIndex": 50,
+      "title": "vvinjy",
+      "controlmodule": "checklist",
+      "prompt": "<label>Are any of the following reasons why you did not get a Vivitrol injection while incarcerated?</label><br><em>(read list and check all that apply, then skip to question #40)</em>",
+      "other": true,
+      "otherPrompt": "Please specify other",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "didn’t want to do the drug screening while in prison",
+          "value": "drugscreen"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "didn’t want to do the medical evaluation while in prison",
+          "value": "medeval"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "not eligible after the medical evaluation",
+          "value": " ineligible"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Vivitrol has too many side effects",
+          "value": "sideeffects"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "did not want to be on a medication (desire for abstinence)",
+          "value": "abstinence"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "needles might promote relapse",
+          "value": "relapse"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "fear of being treated rudely or unkindly",
+          "value": "fearrude"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "don't trust doctors",
+          "value": "notrustdoc"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "family/personal issues (e.g., spouse didn’t want me to be on Vivitrol)",
+          "value": "family"
+        },
+        {
+          "arrayid": 9,
+          "prompt": "confidentiality (privacy)",
+          "value": "privacy"
+        },
+        {
+          "arrayid": 10,
+          "prompt": "",
+          "value": ""
+        },
+        {
+          "arrayid": 11,
+          "prompt": "preferred to use another type of medication assisted treatment after release such as methadone or buprenorphine (also known as Suboxone and Zubsolv)",
+          "value": "othermed"
+        }
+      ]
     }
 
 
