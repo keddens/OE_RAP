@@ -23,7 +23,8 @@
       "12",
       "13",
       "14",
-      "15"
+      "15",
+      "16"
     ]
   },
   "sheetlogic": [
@@ -100,6 +101,11 @@
     {
       "sheetid": "15",
       "title": "Substance Abuse Treatment 8",
+      "description": ""
+    },
+    {
+      "sheetid": "16",
+      "title": "Alcohol/Drug Use Status 1",
       "description": ""
     }
   ],
@@ -4310,7 +4316,373 @@
           "value": "98"
         }
       ]
+    },
+    {
+      "eid": "1557",
+      "sheetid": "15",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "abstnopi",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Based on what you know about yourself and your situation, how good are the chances that you can get off and stay off of opioids? Are they:</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Very poor",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Moderately poor",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Uncertain",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Moderately good",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Very good",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "eid": "1558",
+      "sheetid": "15",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "abstnall",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Based on what you know about yourself and your situation, how good are the chances that you can get off and stay off of all drugs/alcohol? Are they:</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Very poor",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Moderately poor",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Uncertain",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Moderately good",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Very good",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "eid": "1559",
+      "sheetid": "15",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "abstnfac",
+      "controlmodule": "shorttext",
+      "prompt": "<label>What factors are associated with those who are successful after treatment? (open ended)</label><br><em> (Probe: How would you describe the people who are successful at staying off drugs and alcohol after treatment?)</em>"
+    },
+    {
+      "eid": "1560",
+      "sheetid": "15",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "odpreved",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Has anyone ever given you information on how to prevent an overdose?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "1561",
+      "sheetid": "15",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "odhelped",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Has anyone ever given you information on how to help someone who has overdosed?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "1562",
+      "sheetid": "15",
+      "poolid": "rapproject",
+      "sortIndex": 25,
+      "title": "odedprov",
+      "controlmodule": "checklist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1561",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>Who gave you information on overdoses? (Check all that apply)</label>",
+      "other": true,
+      "otherPrompt": "Please specify other",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "drug treatment staff",
+          "value": "dgtxstaff"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "paramedics",
+          "value": "paramed"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "doctor or nurse",
+          "value": "docnurse"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "pharmacist",
+          "value": "pharmacist"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "social service clinician (SSC)",
+          "value": "SSC"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "police",
+          "value": "police"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "friend or acquaintance",
+          "value": "friend"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "spouse or partner",
+          "value": "partner"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "family member",
+          "value": "family"
+        }
+      ]
+    },
+    {
+      "eid": "1563",
+      "sheetid": "15",
+      "poolid": "rapproject",
+      "sortIndex": 30,
+      "title": "nlxcnty",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Naloxone is a drug used to treat a narcotic overdose in an emergency. Is naloxone (Narcan, Evzio) available for the treatment of opioid overdose in your county?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "I have never heard of Naloxone (Narcan®, Evzio®)",
+          "value": "1"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Don't Know",
+          "value": "97"
+        }
+        {
+          "arrayid": 4,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "1564",
+      "sheetid": "15",
+      "poolid": "rapproject",
+      "sortIndex": 35,
+      "title": "nlxkitu",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1563",
+            "comparator": "!=",
+            "value": "2"
+          }
+        ]
+      },
+      "prompt": "<label>Do you have a naloxone kit (Narcan, Evzio)?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "1565",
+      "sheetid": "15",
+      "poolid": "rapproject",
+      "sortIndex": 40,
+      "title": "nlxkitfm",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1563",
+            "comparator": "!=",
+            "value": "2"
+          }
+        ]
+      },
+      "prompt": "<label>Do any of your family members have a naloxone kit (Narcan, Evzio)?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Don't Know",
+          "value": "97"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "1566",
+      "sheetid": "15",
+      "poolid": "rapproject",
+      "sortIndex": 45,
+      "title": "nlxkitfd",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1563",
+            "comparator": "!=",
+            "value": "2"
+          }
+        ]
+      },
+      "prompt": "<label>Do any your friends have a naloxone kit (Narcan, Evzio)?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Don't Know",
+          "value": "97"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "druguseboil1",
+      "sheetid": "16",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "Alcohol/Drug Use Status 1",
+      "controlmodule": "boilerplate",
+      "prompt": "<strong>Now I am going to ask you some questions about your substance use in the past 3 months. I want to remind you that anything you say is confidential.</strong>",
+      "content": "<p><em>Note: Even if a participant reports no use of illegal drugs in the past 3 months ask about each specific drug. Say something like “I know you indicated that you have not used illegal drugs in the past three months but I still need to read through the list.” Also, the unprescribed use of prescription medication or misuse of prescribed medication (e.g., taking more than prescribed) should be counted as the use of illegal drugs.<em></p>"
     }
+    
 
 
 
