@@ -25,7 +25,8 @@
       "14",
       "15",
       "16",
-      "17"
+      "17",
+      "18"
     ]
   },
   "sheetlogic": [
@@ -112,6 +113,11 @@
     {
       "sheetid": "17",
       "title": "Alcohol/Drug Use Status 2",
+      "description": ""
+    },
+    {
+      "sheetid": "18",
+      "title": "Alcohol/Drug Use Status 3",
       "description": ""
     }
   ],
@@ -5096,7 +5102,315 @@
       "controlmodule": "boilerplate",
       "prompt": "<strong>You indicated that you have used substances in the past 3 months since your release from prison:</strong>",
       "content": ""
-    }
+    },
+    {
+      "eid": "1702",
+      "sheetid": "17",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "daysetoh",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How many days were you out on the street before you first used alcohol?</label>"
+    },
+    {
+      "eid": "1702a",
+      "sheetid": "17",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "fctretoh",
+      "controlmodule": "shorttext",
+      "prompt": "<label>What would you say were the factors that led up to your alcohol use?</label>"
+    },
+    {
+      "eid": "1702b",
+      "sheetid": "17",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "rlpsetoh",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Would you consider your alcohol use a relapse?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "1703",
+      "sheetid": "17",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "daysdrug",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How many days were you out on the street before you first used any illegal substance?</label>"
+    },
+    {
+      "eid": "1703a",
+      "sheetid": "17",
+      "poolid": "rapproject",
+      "sortIndex": 25,
+      "title": "fctrdrug",
+      "controlmodule": "shorttext",
+      "prompt": "<label>What would you say were the factors that led up to your substance use?</label>"
+    },
+    {
+      "eid": "1703b",
+      "sheetid": "17",
+      "poolid": "rapproject",
+      "sortIndex": 30,
+      "title": "rlpsdrug",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Would you consider your substance use a relapse?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "1704",
+      "sheetid": "17",
+      "poolid": "rapproject",
+      "sortIndex": 35,
+      "title": "injdrg90",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Have you injected drugs within the past 3 months?</label><br><em>(Do NOT count injection of legal and prescribed medication, i.e., insulin, hormones)</em>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "1705",
+      "sheetid": "17",
+      "poolid": "rapproject",
+      "sortIndex": 40,
+      "title": "injclist",
+      "controlmodule": "checklist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1704",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>What drugs did you inject in the past 3 months? (check all that apply)</label>",
+      "other": true,
+      "otherPrompt": "Please specify other",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Heroin alone",
+          "value": "heroin"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Cocaine alone",
+          "value": "cocaine"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Heroin and cocaine together",
+          "value": "heroincoke"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Heroin and Oxycontin together",
+          "value": "heroinoxy"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Methamphetamine",
+          "value": "meth"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Methadone",
+          "value": "methadone"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "Oxycontin",
+          "value": "oxycontin"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "Other oxycodone",
+          "value": "otheroxy"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "Hydrocodone",
+          "value": "hydrocod"
+        },
+        {
+          "arrayid": 9,
+          "prompt": "Other narcotic/pain killer",
+          "value": " othernarc"
+        },
+        {
+          "arrayid": 10,
+          "prompt": "Benzodiazepines (Xanax, Valium, etc.)",
+          "value": "benzos"
+        },
+        {
+          "arrayid": 11,
+          "prompt": "Other tranquilizers/downers",
+          "value": "othertranq"
+        },
+        {
+          "arrayid": 12,
+          "prompt": "Antidepressants",
+          "value": "antidepress"
+        },
+        {
+          "arrayid": 13,
+          "prompt": "Ecstasy",
+          "value": "ecstasy"
+        },
+        {
+          "arrayid": 14,
+          "prompt": "Don’t know",
+          "value": "dontknow"
+        },
+        {
+          "arrayid": 15,
+          "prompt": "Refuse to answer",
+          "value": "refused"
+        }
+      ]
+    },
+    {
+      "eid": "1706",
+      "sheetid": "17",
+      "poolid": "rapproject",
+      "sortIndex": 45,
+      "title": "needleat",
+      "controlmodule": "checklist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1704",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the last 3 months, where have you gotten needles? (check all that apply)</label>",
+      "other": true,
+      "otherPrompt": "Please specify other",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Pharmacy",
+          "value": "pharma"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Drug dealer",
+          "value": "dealer"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Family member or relative",
+          "value": "family"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Friend or acquaintance",
+          "value": "friend"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Diabetic",
+          "value": "diabetic"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Needle Exchange Program",
+          "value": "NEP"
+        }
+      ]
+    },
+    {
+      "eid": "1707",
+      "sheetid": "17",
+      "poolid": "rapproject",
+      "sortIndex": 50,
+      "title": "needlmaj",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1704",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the last 3 months, where have you gotten needles? (check all that apply)</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Pharmacy",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Drug dealer",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Family member or relative",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Friend or acquaintance",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Diabetic",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Needle Exchange Program",
+          "value": "7"
+        }
+      ]
+    },
+
+
 
 
     
