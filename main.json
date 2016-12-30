@@ -18,7 +18,8 @@
       "7",
       "8",
       "9",
-      "10"
+      "10",
+      "11"
     ]
   },
   "sheetlogic": [
@@ -70,6 +71,11 @@
     {
       "sheetid": "10",
       "title": "Substance Abuse Treatment 3",
+      "description": ""
+    },
+    {
+      "sheetid": "11",
+      "title": "Substance Abuse Treatment 4",
       "description": ""
     }
   ],
@@ -3133,6 +3139,203 @@
           "value": "substance"
         }
       ]
+    },
+    {
+      "eid": "1021",
+      "sheetid": "10",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "oupt3mo",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Altogether how many times did you receive outpatient treatment in the past 3 months for these health issues?</label><br><em>(Note: Do NOT include AA/NA, DUI education classes, or medication assisted treatment)</em>"
+    },
+    {
+      "eid": "1022",
+      "sheetid": "10",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "oupt1mo",
+      "controlmodule": "shorttext",
+      "prompt": "<label>Altogether how many times did you receive outpatient treatment in the past 30 days for these health issues?</label><br><em>(Note: Do NOT include AA/NA, DUI education classes, or medication assisted treatment)</em>"
+    },
+    {
+      "eid": "1023",
+      "sheetid": "10",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "ouptsatx",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Did you attend an outpatient treatment program for substance use in the past 3 months?</label><br><em>(Note: Do NOT include AA/NA, DUI education classes, or medication assisted treatment)</em>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "1024",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1023",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "sheetid": "10",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "outxname",
+      "controlmodule": "shorttext",
+      "prompt": "<label>What is the name of outpatient substance abuse treatment program?</label>"
+    },
+    {
+      "eid": "1025",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1023",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "sheetid": "10",
+      "poolid": "rapproject",
+      "sortIndex": 25,
+      "title": "outxwhy",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Why did you select this program?</label>",
+      "other": true,
+      "otherPrompt": "Please specify other",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Referred by my prison counselor",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Referred by my probation/parole officer",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Referred by my SSC",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "The only option in my community",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Recommended by a peer",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "eid": "1026",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1023",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "sheetid": "10",
+      "poolid": "rapproject",
+      "sortIndex": 30,
+      "title": "outxnumb",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How many outpatient substance abuse treatment sessions did you attend?</label>"
+    },
+    {
+      "eid": "1027",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1023",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "sheetid": "10",
+      "poolid": "rapproject",
+      "sortIndex": 35,
+      "title": "outxrlps",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Did you enter the outpatient substance abuse treatment program because of a relapse?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "1028",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1023",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "sheetid": "10",
+      "poolid": "rapproject",
+      "sortIndex": 40,
+      "title": "outxprle",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Was your participation in the treatment program a requirement of your parole?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "Vivitrol-boil",
+      "sheetid": "11",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "VivitrolBoilerplate",
+      "controlmodule": "boilerplate",
+      "prompt": "<p>Next, we would like to specifically discuss one type of medication for the treatment of opioid dependence called Vivitrol® (also known as extended release naltrexone). It is administered through a monthly injection.  As part of the Kentucky’s response to the opioid epidemic, Senate Bill 192 was passed in 2015 to give funds for the DOC to offer Vivitrol® to eligible inmates prior to release from prison.</p>",
+      "content": ""
     }
 
 
