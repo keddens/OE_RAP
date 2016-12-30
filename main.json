@@ -19,7 +19,8 @@
       "8",
       "9",
       "10",
-      "11"
+      "11",
+      "12"
     ]
   },
   "sheetlogic": [
@@ -76,6 +77,11 @@
     {
       "sheetid": "11",
       "title": "Substance Abuse Treatment 4",
+      "description": ""
+    },
+    {
+      "sheetid": "12",
+      "title": "Substance Abuse Treatment 5",
       "description": ""
     }
   ],
@@ -3674,6 +3680,68 @@
           "arrayid": 11,
           "prompt": "preferred to use another type of medication assisted treatment after release such as methadone or buprenorphine (also known as Suboxone and Zubsolv)",
           "value": "othermed"
+        }
+      ]
+    },
+    {
+      "eid": "1139",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1136",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "sheetid": "11",
+      "poolid": "rapproject",
+      "sortIndex": 55,
+      "title": "vvinjcon",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Did you want to continue Vivitrol after release?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "1240",
+      "sheetid": "12",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "vvinj3mo",
+      "controlmodule": "radiolist",
+      "prompt": "<label>In the past 3 months, have you gone to a doctor for an injection of Vivitrol?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Refuse to Answer",
+          "value": "98"
         }
       ]
     }
