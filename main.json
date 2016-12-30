@@ -17,7 +17,8 @@
       "6",
       "7",
       "8",
-      "9"
+      "9",
+      "10"
     ]
   },
   "sheetlogic": [
@@ -64,6 +65,11 @@
     {
       "sheetid": "9",
       "title": "Substance Abuse Treatment 2",
+      "description": ""
+    },
+    {
+      "sheetid": "10",
+      "title": "Substance Abuse Treatment 3",
       "description": ""
     }
   ],
@@ -2951,6 +2957,180 @@
           "arrayid": 1,
           "prompt": "Yes",
           "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "915",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "914",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "sheetid": "9",
+      "poolid": "rapproject",
+      "sortIndex": 35,
+      "title": "intxname",
+      "controlmodule": "shorttext",
+      "prompt": "<label>What is the name of the residential/inpatient substance abuse treatment program?</label>"
+    },
+    {
+      "eid": "916",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "914",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "sheetid": "9",
+      "poolid": "rapproject",
+      "sortIndex": 40,
+      "title": "intxwhy",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Why did you select this program?</label>",
+      "other": true,
+      "otherPrompt": "Please specify other",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Referred by my prison counselor",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Referred by my probation/parole officer",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Referred by my SSC",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "The only option in my community",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Recommended by a peer",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "eid": "917",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "914",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "sheetid": "9",
+      "poolid": "rapproject",
+      "sortIndex": 45,
+      "title": "intxdays",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How many days did you stay in the residential/inpatient substance abuse treatment program?</label>"
+    },
+    {
+      "eid": "918",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "914",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "sheetid": "9",
+      "poolid": "rapproject",
+      "sortIndex": 50,
+      "title": "intxrlps",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Did you enter the residential/inpatient substance abuse treatment program because of a relapse?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "919",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "914",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "sheetid": "9",
+      "poolid": "rapproject",
+      "sortIndex": 55,
+      "title": "intxprle",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Was your participation in the treatment program a requirement of your parole?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "1020",
+      "sheetid": "10",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "outptx",
+      "controlmodule": "checklist",
+      "prompt": "<label>During the past 3 months did you receive Outpatient Treatment for:</label><br><em>(e.g., doctor, urgent treatment center, counselor or mental health or substance abuse professional, but not including AA/NA, DUI education classes or medication assisted treatment).</em>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Physical health complaints",
+          "value": "physical"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Mental or emotional health difficulties",
+          "value": "mental"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Alcohol or substance abuse",
+          "value": "substance"
         }
       ]
     }
