@@ -21,7 +21,8 @@
       "10",
       "11",
       "12",
-      "13"
+      "13",
+      "14"
     ]
   },
   "sheetlogic": [
@@ -88,6 +89,11 @@
     {
       "sheetid": "13",
       "title": "Substance Abuse Treatment 6",
+      "description": ""
+    },
+    {
+      "sheetid": "14",
+      "title": "Substance Abuse Treatment 7",
       "description": ""
     }
   ],
@@ -4009,6 +4015,70 @@
         ]
       },
       "prompt": "<label>How many Vivitrol injections have you received in the past 3 months?</label><br><em> (Note: should be between 1 and 3) (If 3 injections, then skip to question #48)</em>"
+    },
+    {
+      "eid": "1347",
+      "sheetid": "13",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "vvinjnoy",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1346",
+            "comparator": "<",
+            "value": "3"
+          }
+        ]
+      },
+      "prompt": "<label>Why have you not received monthly Vivitrol injections? (open ended)</label>"
+    },
+    {
+      "eid": "1348",
+      "sheetid": "13",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "vvexprnc",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1346",
+            "comparator": "===",
+            "value": "3"
+          }
+        ]
+      },
+      "prompt": "<label>Please describe your experience while taking Vivitrol? (open ended)</label><br><em>(Probes: What did you like and dislike about taking Vivitrol? Describe what helped you get Vivitrol in the community? Describe what challenges you faced in getting Vivitrol in the community? Describe your interactions with your doctor who prescribed Vivitrol.)</em>"
+    },
+    {
+      "eid": "1449",
+      "sheetid": "14",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "mthdn3mo",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Did you go to a doctor or treatment provider to receive methadone for the treatment of opioid dependence in the past 3 months?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
     }
 
 
