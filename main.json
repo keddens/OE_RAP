@@ -20,7 +20,8 @@
       "9",
       "10",
       "11",
-      "12"
+      "12",
+      "13"
     ]
   },
   "sheetlogic": [
@@ -82,6 +83,11 @@
     {
       "sheetid": "12",
       "title": "Substance Abuse Treatment 5",
+      "description": ""
+    },
+    {
+      "sheetid": "13",
+      "title": "Substance Abuse Treatment 6",
       "description": ""
     }
   ],
@@ -3744,6 +3750,265 @@
           "value": "98"
         }
       ]
+    },
+    {
+      "eid": "1241",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1240",
+            "comparator": "===",
+            "value": "0"
+          }
+        ]
+      },
+      "sheetid": "12",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "vvinjy",
+      "controlmodule": "checklist",
+      "prompt": "<label>Are any of the following statements reasons why you didn't continue Vivitrol after release?</label><br><em>(Read list and check all that apply, then skip to question #49)</em>",
+      "other": true,
+      "otherPrompt": "Please specify other",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "using drugs (no desire for treatment)",
+          "value": "usedrugs"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "did not want to be on a medication (desire for abstinence)",
+          "value": "abstinence"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Vivitrol has too many side effects",
+          "value": "sideeffects"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "don’t need additional treatment",
+          "value": "notxneed"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "needles might promote relapse",
+          "value": "relapse"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "lack of personal identification/documents (e.g., driver’s license, social security card)",
+          "value": "noID"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "other health issues",
+          "value": "health"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "no insurance coverage",
+          "value": "insurance"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "too expensive",
+          "value": "toocostly"
+        },
+        {
+          "arrayid": 9,
+          "prompt": "child care not available",
+          "value": "nokidcare"
+        },
+        {
+          "arrayid": 10,
+          "prompt": "didn't have a way to get there/transportation problems",
+          "value": "notransport"
+        },
+        {
+          "arrayid": 11,
+          "prompt": "fear of being treated rudely or unkindly",
+          "value": "fearrude"
+        },
+        {
+          "arrayid": 12,
+          "prompt": "don't trust doctors",
+          "value": "notrustdoc"
+        },
+        {
+          "arrayid": 13,
+          "prompt": "didn't know what doctor to see",
+          "value": "whichdoc"
+        },
+        {
+          "arrayid": 14,
+          "prompt": "family/personal issues (e.g., spouse didn’t want me to get a Vivitrol injection)",
+          "value": "family"
+        },
+        {
+          "arrayid": 15,
+          "prompt": "slow admission process/long wait times",
+          "value": "tooslow"
+        },
+        {
+          "arrayid": 16,
+          "prompt": "preferred to use another type of medication assisted treatment after release such as methadone or buprenorphine (also known as Suboxone and Zubsolv)",
+          "value": "othermeds"
+        },
+        {
+          "arrayid": 17,
+          "prompt": "confidentiality (privacy)",
+          "value": "privacy"
+        },
+        {
+          "arrayid": 18,
+          "prompt": "concerned about overdose",
+          "value": "overdose"
+        }
+      ]
+    },
+    {
+      "eid": "1242",
+      "sheetid": "12",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "vvinjat",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1240",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>What is the name of treatment location (or physician) where you received Vivitrol?</label>"
+    },
+    {
+      "eid": "1243",
+      "sheetid": "12",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "vvinjaty",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Why did you select this location?</label>",
+      "other": true,
+      "otherPrompt": "Please specify other",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1240",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Referred by my prison counselor",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Referred by my probation/parole officer",
+          "value": "2"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Referred by my SSC",
+          "value": "3"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "The only option in my community",
+          "value": "4"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Recommended by a peer",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "eid": "1244",
+      "sheetid": "11",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "vvinjprl",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Was your participation in Vivitrol a requirement of your parole?</label>",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1240",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "1245",
+      "sheetid": "12",
+      "poolid": "rapproject",
+      "sortIndex": 25,
+      "title": "vvinjday",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1240",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>How long were you on the street before you obtained your first injection of Vivitrol (days)?</label>"
+    },
+    {
+      "eid": "1346",
+      "sheetid": "13",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "vvinjnum",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1240",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>How many Vivitrol injections have you received in the past 3 months?</label><br><em> (Note: should be between 1 and 3) (If 3 injections, then skip to question #48)</em>"
     }
 
 
