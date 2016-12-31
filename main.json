@@ -5626,6 +5626,75 @@
         }
       ]
     },
+    {
+      "eid": "1812",
+      "sheetid": "18",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "wrkshnum",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1704",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>Altogether, how many PEOPLE did you <u>share the needles with</u> during <u>those 3 months?</u> This means all the people who used the same cooker, cotton, or rinse water <u>before</u> you did?</label>"
+    },
+    {
+      "eid": "1813",
+      "sheetid": "18",
+      "poolid": "rapproject",
+      "sortIndex": 25,
+      "title": "injcouts",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1704",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>How many of your injection partners (people who you inject with) do <u>not</u> reside in this area (Appalachia/Eastern Kentucky)?</label><br><em>(Note: should not be higher than the number listed in question #10)</em>"
+    },
+    {
+      "eid": "1814",
+      "sheetid": "18",
+      "poolid": "rapproject",
+      "sortIndex": 30,
+      "title": "newinjct",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1704",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>Have you ever initiated or introduced anyone into injecting drugs in the past 3 months?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
 
 
 
