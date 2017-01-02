@@ -5695,6 +5695,104 @@
         }
       ]
     },
+    {
+      "eid": "1815",
+      "sheetid": "18",
+      "poolid": "rapproject",
+      "sortIndex": 35,
+      "title": "injdrg30",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1704",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>In the past 30 days, have you injected drugs?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "1816",
+      "sheetid": "18",
+      "poolid": "rapproject",
+      "sortIndex": 40,
+      "title": "wrkssh30",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1815",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>In the past 30 days, how often did you use a syringe, cooker, cotton or water that someone else used?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Never",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Sometimes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Half the time",
+          "value": "2"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Frequently",
+          "value": "3"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Always",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "eid": "1817",
+      "sheetid": "18",
+      "poolid": "rapproject",
+      "sortIndex": 45,
+      "title": "ovrds30",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Have you overdosed in the past 3 months? When I say “overdose” I mean a situation where, after using drugs, you passed out and couldn’t wake up.</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
 
 
 
