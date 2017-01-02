@@ -27,7 +27,8 @@
       "16",
       "17",
       "18",
-      "19"
+      "19",
+      "20"
     ]
   },
   "sheetlogic": [
@@ -124,6 +125,11 @@
     {
       "sheetid": "19",
       "title": "Sexual Behaviors",
+      "description": ""
+    },
+    {
+      "sheetid": "20",
+      "title": "Health Status 1",
       "description": ""
     }
   ],
@@ -5847,6 +5853,408 @@
       "title": "malesexp",
       "controlmodule": "shorttext",
       "prompt": "<label>How many different <u>male sex partners</u> (oral, anal or vaginal) have you had since release?</label>"
+    },
+    {
+      "eid": "1902",
+      "sheetid": "19",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "msexpidu",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1901",
+            "comparator": ">",
+            "value": "0"
+          }
+        ]
+      },
+      "prompt": "<label>How many of your <u>male sex partners</u> did you know were injection drug users?</label>"
+    },
+    {
+      "eid": "1903",
+      "sheetid": "19",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "msexpout",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1901",
+            "comparator": ">",
+            "value": "0"
+          }
+        ]
+      },
+      "prompt": "<label>How many of your <u>male sex partners</u> do <u>not</u> reside in this area (Appalachia/Eastern Kentucky)?</label>"
+    },
+    {
+      "eid": "1904",
+      "sheetid": "19",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "femalesexp",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How many different <u>female sex partners</u> (oral, anal or vaginal) have you had since release?</label>"
+    },
+    {
+      "eid": "1905",
+      "sheetid": "19",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "fsexpidu",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1904",
+            "comparator": ">",
+            "value": "0"
+          }
+        ]
+      },
+      "prompt": "<label>How many of your <u>female sex partners</u> did you know were injection drug users?</label>"
+    },
+    {
+      "eid": "1906",
+      "sheetid": "19",
+      "poolid": "rapproject",
+      "sortIndex": 25,
+      "title": "fsexpout",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1904",
+            "comparator": ">",
+            "value": "0"
+          }
+        ]
+      },
+      "prompt": "<label>How many of your <u>female sex partners</u> do <u>not</u> reside in this area (Appalachia/Eastern Kentucky)?</label>"
+    },
+    {
+      "eid": "1907",
+      "sheetid": "19",
+      "poolid": "rapproject",
+      "sortIndex": 30,
+      "title": "prisxprt",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "||",
+        "values": [
+          {
+            "eid": "1901",
+            "comparator": ">",
+            "value": "0"
+          },
+          {
+            "eid": "1904",
+            "comparator": ">",
+            "value": "0"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months, have you had a primary sex partner or spouse?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "1908",
+      "sheetid": "19",
+      "poolid": "rapproject",
+      "sortIndex": 35,
+      "title": "pribaren",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1907",
+            "comparator": "=",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months, how often did you have sex <u>WITHOUT USING A CONDOM</u> with someone who was <u>your spouse or primary partner</u>?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Never",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Only a few times",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "1-3 times a month",
+          "value": "2"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "1-5 times a week",
+          "value": "3"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "About every day",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "eid": "1909",
+      "sheetid": "19",
+      "poolid": "rapproject",
+      "sortIndex": 35,
+      "title": "otsxprt",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "||",
+        "values": [
+          {
+            "eid": "1901",
+            "comparator": ">",
+            "value": "0"
+          },
+          {
+            "eid": "1904",
+            "comparator": ">",
+            "value": "0"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months, did you have sex with someone who was <u>not</u> your spouse or primary partner?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "1910",
+      "sheetid": "19",
+      "poolid": "rapproject",
+      "sortIndex": 40,
+      "title": "othbaren",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1909",
+            "comparator": "=",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months, how often did you have sex <u>WITHOUT USING A CONDOM</u> with someone who was <u>not</u> your spouse or primary partner?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Never",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Only a few times",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "1-3 times a month",
+          "value": "2"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "1-5 times a week",
+          "value": "3"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "About every day",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "eid": "1911",
+      "sheetid": "19",
+      "poolid": "rapproject",
+      "sortIndex": 45,
+      "title": "injsxprt",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "||",
+        "values": [
+          {
+            "eid": "1901",
+            "comparator": ">",
+            "value": "0"
+          },
+          {
+            "eid": "1904",
+            "comparator": ">",
+            "value": "0"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months, how often did you have sex <u>WITHOUT USING A CONDOM</u> with someone who <u>shot drugs with needles?</u></label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Never",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Only a few times",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "1-3 times a month",
+          "value": "2"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "1-5 times a week",
+          "value": "3"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "About every day",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "eid": "1912",
+      "sheetid": "19",
+      "poolid": "rapproject",
+      "sortIndex": 50,
+      "title": "prosxprt",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "||",
+        "values": [
+          {
+            "eid": "1901",
+            "comparator": ">",
+            "value": "0"
+          },
+          {
+            "eid": "1904",
+            "comparator": ">",
+            "value": "0"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months, how often did you have sex <u>WITHOUT USING A CONDOM</u> while you or your partner were trading, giving, or getting <u>sex for drugs, money, or gifts?</u></label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Never",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Only a few times",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "1-3 times a month",
+          "value": "2"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "1-5 times a week",
+          "value": "3"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "About every day",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "eid": "1913",
+      "sheetid": "19",
+      "poolid": "rapproject",
+      "sortIndex": 55,
+      "title": "outsxprt",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "||",
+        "values": [
+          {
+            "eid": "1901",
+            "comparator": ">",
+            "value": "0"
+          },
+          {
+            "eid": "1904",
+            "comparator": ">",
+            "value": "0"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months, how often did you have sex (oral, vaginal, anal) or inject drugs with someone who does <u>not</u> reside in this area (Appalachia/Eastern Kentucky)?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Never",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Only a few times",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "1-3 times a month",
+          "value": "2"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "1-5 times a week",
+          "value": "3"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "About every day",
+          "value": "4"
+        }
+      ]
     }
 
 
