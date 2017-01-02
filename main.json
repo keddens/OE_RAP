@@ -26,7 +26,8 @@
       "15",
       "16",
       "17",
-      "18"
+      "18",
+      "19"
     ]
   },
   "sheetlogic": [
@@ -118,6 +119,11 @@
     {
       "sheetid": "18",
       "title": "Alcohol/Drug Use Status 3",
+      "description": ""
+    },
+    {
+      "sheetid": "19",
+      "title": "Sexual Behaviors",
       "description": ""
     }
   ],
@@ -5793,6 +5799,55 @@
         }
       ]
     },
+    {
+      "eid": "1818",
+      "sheetid": "18",
+      "poolid": "rapproject",
+      "sortIndex": 50,
+      "title": "ovrdsdys",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "1817",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>How many days were you out on the street before you overdosed?</label>"
+    },
+    {
+      "eid": "1819",
+      "sheetid": "18",
+      "poolid": "rapproject",
+      "sortIndex": 55,
+      "title": "ovrdssee",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Have you seen someone else overdose in the past 3 months?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "1901",
+      "sheetid": "19",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "malesexp",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How many different <u>male sex partners</u> (oral, anal or vaginal) have you had since release?</label>"
+    }
 
 
 
