@@ -36,7 +36,8 @@
       "25",
       "26",
       "27",
-      "28"
+      "28",
+      "29"
     ]
   },
   "sheetlogic": [
@@ -178,6 +179,11 @@
     {
       "sheetid": "28",
       "title": "Section II: Alter Characteristics and Functions",
+      "description": "These questions will be asked about each person named in Section I"
+    },
+    {
+      "sheetid": "28",
+      "title": "Section III: Alter's Drug Use",
       "description": "These questions will be asked about each person named in Section I"
     }
   ],
@@ -9370,7 +9376,107 @@
       "controlmodule": "namepick",
       "prompt": "<label>Pays or contributes to your rent or bills or to food or groceries</label>",
       "namelist": "rentpick"
+    },
+    {
+      "eid": "altercharac-boil",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 90,
+      "title": "AlterCharactBoilerplate",
+      "controlmodule": "boilerplate",
+      "prompt": "<p>Below is the list of people you named. Now we’re going to ask you a few questions about them, and we’d like you to choose the names of the people who fit the description. Please remember that all your answers are kept confidential.</p>"
+    },
+    {
+      "eid": "2810a",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 95,
+      "title": "kpsnpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Knows you were in prison</label>",
+      "namelist": "kpsnpick"
+    },
+    {
+      "eid": "2810b",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 100,
+      "title": "jailpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Has ever been incarcerated in jail or prison after a conviction</label>",
+      "namelist": "jailpick"
+    },
+    {
+      "eid": "2810c",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 105,
+      "title": "sexpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Has engaged in sex (oral, vaginal, or anal intercourse) with you</label>",
+      "namelist": "sexpick"
+    },
+    {
+      "eid": "2810d",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 110,
+      "title": "exsxpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Has engaged in trading sex in exchange for drugs or money</label>",
+      "namelist": "exsxpick"
+    },
+    {
+      "eid": "2810e",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 115,
+      "title": "hivpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Has HIV/AIDS</label>",
+      "namelist": "hivpick"
+    },
+    {
+      "eid": "2810f",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 120,
+      "title": "hcvpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Has the Hepatitis C virus (also known as HCV or Hep C)</label>",
+      "namelist": "hcvpick"
+    },
+    {
+      "eid": "2810g",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 125,
+      "title": "odpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Has overdosed on drugs</label>",
+      "namelist": "odpick"
+    },
+    {
+      "eid": "2810h",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 130,
+      "title": "narcpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Has access to naloxone (Narcan, Evzio), which is a drug used to treat a narcotic overdose in an emergency</label>",
+      "namelist": "narcpick"
+    },
+    {
+      "eid": "alterdrug-boil",
+      "sheetid": "29",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "AlterDrugBoilerplate",
+      "controlmodule": "boilerplate",
+      "prompt": "<p>This section asks about your network members’ drug use. Please remember that all your responses are kept confidential. Below is the list of people you named.</p>",
+      "content": ""
     }
+
 
 
 
