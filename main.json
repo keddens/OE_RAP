@@ -7019,6 +7019,355 @@
         }
       ]
     },
+    {
+      "eid": "2114",
+      "sheetid": "21",
+      "poolid": "rapproject",
+      "sortIndex": 50,
+      "title": "hcvinwho",
+      "controlmodule": "checklist",
+      "other": true,
+      "otherPrompt": "Please specify other",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2113",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>Who gave you that information? (Check all that apply)</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "drug treatment staff",
+          "value": "drugtreatmentstaff"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "paramedics",
+          "value": "paramedics"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "doctor or nurse",
+          "value": "doctorornurse"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "pharmacist",
+          "value": "pharmacist"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "social service clinician (SSC)",
+          "value": "SSC"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "police",
+          "value": "police"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "friend or acquaintance",
+          "value": "friendoracquaintance"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "spouse or partner",
+          "value": "spouseorpartner"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "family member",
+          "value": "familymember"
+        }
+      ]
+    },
+    {
+      "eid": "2115",
+      "sheetid": "21",
+      "poolid": "rapproject",
+      "sortIndex": 55,
+      "title": "hcvtest",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Have you ever been tested for the hepatitis C virus?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Don't Know",
+          "value": "97"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "2116",
+      "sheetid": "21",
+      "poolid": "rapproject",
+      "sortIndex": 60,
+      "title": "hcvdx",
+      "controlmodule": "radiolist",
+      "prompt": "<label>16. Have you ever been told by a doctor or nurse that you had chronic hepatitis C?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Don't Know",
+          "value": "97"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "2117",
+      "sheetid": "21",
+      "poolid": "rapproject",
+      "sortIndex": 65,
+      "title": "hcvdxyr",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2116",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>17. In what year were you first told you were infected with hepatitis C?</label>"
+    },
+    {
+      "eid": "2118",
+      "sheetid": "21",
+      "poolid": "rapproject",
+      "sortIndex": 70,
+      "title": "hcvdxwho",
+      "controlmodule": "checklist",
+      "other": true,
+      "otherPrompt": "Please specify other",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2116",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>18. After testing positive for hepatitis C did you tell: (check all that apply)</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "your current sex partner/spouse",
+          "value": "partner"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "drug use partners (people you inject with)",
+          "value": "drugbuds"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "past injection drug use partners (people you inject with)",
+          "value": "olddrugbuds"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "family member(s)",
+          "value": "family"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "close friend(s)",
+          "value": "friends"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "spouse (if married)",
+          "value": "spouse"
+        }
+      ]
+    },
+    {
+      "eid": "2119",
+      "sheetid": "21",
+      "poolid": "rapproject",
+      "sortIndex": 75,
+      "title": "hcvtestat",
+      "controlmodule": "radiolist",
+      "other": true,
+      "otherPrompt": "Please specify other",
+      "conditions": {
+        "comparator": "||",
+        "values": [
+          {
+            "eid": "2116",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>19. Where were you tested?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Community Health Center/Public Health Clinic",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Family Physician",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Gastroenterologist",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Hospital (inpatient)",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Emergency Room",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Drug Treatment Program",
+          "value": "6"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "Correctional Facility (jail/prison)",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "eid": "2120",
+      "sheetid": "21",
+      "poolid": "rapproject",
+      "sortIndex": 80,
+      "title": "hcvtx",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2116",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>20. Did you seek treatment for hepatitis C?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2121",
+      "sheetid": "21",
+      "poolid": "rapproject",
+      "sortIndex": 85,
+      "title": "hcvtxat",
+      "controlmodule": "radiolist",
+      "other": true,
+      "otherPrompt": "Please specify other",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2116",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>21. Where did you go for treatment?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Community Health Center/Public Health Clinic",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Family Physician",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Gastroenterologist",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Hospital (inpatient)",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Emergency Room",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Drug Treatment Program",
+          "value": "6"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "Correctional Facility (jail/prison)",
+          "value": "7"
+        }
+      ]
+    }
 
 
 
