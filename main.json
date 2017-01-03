@@ -9235,6 +9235,29 @@
           "value": "lessoftn"
         }
       ]
+    },
+    {
+      "eid": "2807",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 35,
+      "title": "closetie",
+      "controlmodule": "oeslider",
+      "prompt": "<label> On a scale from 1 to 10, how close are you to each person, with 1 meaning \"not close at all\" and 10 meaning \"extremely close\"? </label>",
+      "ranges": {
+        "minValue": {
+          "label": "Not close at all",
+          "value": 1
+        },
+        "default": {
+          "label": "",
+          "value": 4
+        },
+        "maxValue": {
+          "label": "Extremely close",
+          "value": 10
+        }
+      }
     }
 
 
