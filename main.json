@@ -7563,6 +7563,185 @@
           "value": "notxinjail"
         }
       ]
+    },
+    {
+      "eid": "2225",
+      "sheetid": "22",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "hivrisk",
+      "controlmodule": "radiolist",
+      "prompt": "<label>25. Which statement best describes your chance of getting the human immunodeficiency virus (HIV)?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No chance (0%)",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Some chance (25%)",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Half chance (50%)",
+          "value": "2"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "High chance (75%)",
+          "value": "3"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Sure chance (100%)",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "eid": "2226",
+      "sheetid": "22",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "hivinfo",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Has anyone ever given you information on the HIV or AIDS?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "2227",
+      "sheetid": "21",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "hivinwho",
+      "controlmodule": "checklist",
+      "other": true,
+      "otherPrompt": "Please specify other",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2226",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>Who gave you that information? (Check all that apply)</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "drug treatment staff",
+          "value": "satxstaff"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "paramedics",
+          "value": "paramed"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "doctor or nurse",
+          "value": "docnurse"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "pharmacist",
+          "value": "pharm"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "social service clinician (SSC)",
+          "value": "SSC"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "police",
+          "value": "police"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "friend or acquaintance",
+          "value": "friend"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "spouse or partner",
+          "value": "partner"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "family member",
+          "value": "family"
+        }
+      ]
+    },
+    {
+      "eid": "2228",
+      "sheetid": "22",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "hivtestn",
+      "controlmodule": "shorttext",
+      "prompt": "<label>28. How many times, if any, have you had a test for the human immunodeficiency virus (or HIV)?</label>"
+    },
+    {
+      "eid": "2229",
+      "sheetid": "22",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "hivrsltn",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2228",
+            "comparator": ">",
+            "value": "0"
+          }
+        ]
+      },
+      "prompt": "<label>29. How many of those time(s) did you get the results?</label>"
+    },
+    {
+      "eid": "2230",
+      "sheetid": "22",
+      "poolid": "rapproject",
+      "sortIndex": 25,
+      "title": "hivdx",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Have you ever been told by a doctor or nurse that you were infected with HIV, the virus that causes AIDS?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
     }
 
 
