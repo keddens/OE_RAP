@@ -6779,7 +6779,246 @@
           "value": "4"
         }
       ]
-    }
+    },
+    {
+      "eid": "healthstatusboil1",
+      "sheetid": "21",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "HealthStatusBoilerplate2",
+      "controlmodule": "boilerplate",
+      "prompt": "<p><em>Next, I’m going to ask you some questions about your knowledge of the Hepatitis C Virus, and it is okay to just take your best guess at the answer. Also, I’m going to ask about your experiences with getting tested for Hepatitis C virus and the human immunodeficiency virus (or HIV, the virus that causes AIDS).</em></p>",
+      "content": ""
+    },
+    {
+      "eid": "2105",
+      "sheetid": "21",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "hcvqinjt",
+      "controlmodule": "radiolist",
+      "prompt": "<label>The easiest way to get hepatitis C is through sharing equipment to inject drugs</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "true",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "false",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "eid": "2106",
+      "sheetid": "21",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "hcvqnsym",
+      "controlmodule": "radiolist",
+      "prompt": "<label>The majority of people with chronic hepatitis C do not have any symptoms</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "true",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "false",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "eid": "2107",
+      "sheetid": "21",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "hcvqwhod",
+      "controlmodule": "radiolist",
+      "prompt": "<label>What can hepatitis C do?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Infect cells in the liver",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Cause inflammation of the liver",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Cause cirrhosis of the liver",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Cause liver cancer",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "All of the above",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "1 and 2 only (infects cells in the liver and causes inflammation of the liver)",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "eid": "2108",
+      "sheetid": "21",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "hcvqchrn",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Everybody with a positive hepatitis C antibody test has chronic hepatitis C disease (infection).</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "true",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "false",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "eid": "2109",
+      "sheetid": "21",
+      "poolid": "rapproject",
+      "sortIndex": 25,
+      "title": "hcvqrxtx",
+      "controlmodule": "radiolist",
+      "prompt": "<label>There is a medication to treat hepatitis C.</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "true",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "false",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "eid": "2110",
+      "sheetid": "21",
+      "poolid": "rapproject",
+      "sortIndex": 30,
+      "title": "hcvqvax",
+      "controlmodule": "radiolist",
+      "prompt": "<label>There is a vaccine for hepatitis C.</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "true",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "false",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "eid": "2111",
+      "sheetid": "21",
+      "poolid": "rapproject",
+      "sortIndex": 35,
+      "title": "hcvqclr",
+      "controlmodule": "radiolist",
+      "prompt": "<label>People who clear the hepatitis C virus, either spontaneously or after medical treatment, can be infected again.</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "true",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "false",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "eid": "2112",
+      "sheetid": "21",
+      "poolid": "rapproject",
+      "sortIndex": 40,
+      "title": "hcvqrisj",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Which statement best describes your chance of getting HCV?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No chance (0%)",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Some chance (25%)",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Half chance (50%)",
+          "value": "2"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "High chance (75%)",
+          "value": "3"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Sure chance (100%)",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "eid": "2113",
+      "sheetid": "21",
+      "poolid": "rapproject",
+      "sortIndex": 45,
+      "title": "hcvinfo",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Has anyone ever given you information on the hepatitis c virus?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
 
 
 
