@@ -9243,7 +9243,7 @@
       "sortIndex": 35,
       "title": "closetie",
       "controlmodule": "oeslider",
-      "prompt": "<label> On a scale from 1 to 10, how close are you to each person, with 1 meaning \"not close at all\" and 10 meaning \"extremely close\"? </label>",
+      "prompt": "<label>On a scale from 1 to 10, how close are you to each person, with 1 meaning \"not close at all\" and 10 meaning \"extremely close\"?</label>",
       "ranges": {
         "minValue": {
           "label": "Not close at all",
@@ -9258,7 +9258,120 @@
           "value": 10
         }
       }
+    },
+    {
+      "eid": "2808",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 40,
+      "title": "trusttie",
+      "controlmodule": "oeslider",
+      "prompt": "<label>On a scale from 1 to 10, how much do you trust each person, with 1 meaning \"don't trust at all\" and 10 meaning \"trust with my life\"?</label>",
+      "ranges": {
+        "minValue": {
+          "label": "Don't trust at all",
+          "value": 1
+        },
+        "default": {
+          "label": "",
+          "value": 4
+        },
+        "maxValue": {
+          "label": "Trust with my life",
+          "value": 10
+        }
+      }
+    },
+    {
+      "eid": "support-boil",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 45,
+      "title": "AlterSupportBoilerplate",
+      "controlmodule": "boilerplate",
+      "prompt": "<p>Below is the list of people you named. Now we’re going to ask you a few questions about the types of support you receive from the people you named. Please choose the names of the people who fit the description.</p>"
+    },
+    {
+      "eid": "2809a",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 50,
+      "title": "lstnpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Listens to you talk about your substance abuse problems and concerns</label>",
+      "namelist": "lstnpick"
+    },
+    {
+      "eid": "2809b",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 55,
+      "title": "esspick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Provides emotional support</label>",
+      "namelist": "esspick"
+    },
+    {
+      "eid": "2809c",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 60,
+      "title": "luvpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Tells you they love you or care about you</label>",
+      "namelist": "luvpick"
+    },
+    {
+      "eid": "2809d",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 65,
+      "title": "funpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Accompanies you to movies, concerts, clubs, or other places for fun and relaxation</label>",
+      "namelist": "funpick"
+    },
+    {
+      "eid": "2809e",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 70,
+      "title": "advcpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Gives you practical suggestions or advice</label>",
+      "namelist": "advcpick"
+    },
+    {
+      "eid": "2809f",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 75,
+      "title": "instpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Helps you with transportation, housework or errands, childcare, or other tasks</label>",
+      "namelist": "instpick"
+    },
+    {
+      "eid": "2809g",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 80,
+      "title": "monypick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Gives or loans you money when you need it</label>",
+      "namelist": "monypick"
+    },
+    {
+      "eid": "2809h",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 85,
+      "title": "rentpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Pays or contributes to your rent or bills or to food or groceries</label>",
+      "namelist": "rentpick"
     }
+
 
 
 
