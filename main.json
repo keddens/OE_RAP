@@ -37,7 +37,8 @@
       "26",
       "27",
       "28",
-      "29"
+      "29",
+      "30"
     ]
   },
   "sheetlogic": [
@@ -182,8 +183,13 @@
       "description": "These questions will be asked about each person named in Section I"
     },
     {
-      "sheetid": "28",
+      "sheetid": "29",
       "title": "Section III: Alter's Drug Use",
+      "description": "These questions will be asked about each person named in Section I"
+    },
+    {
+      "sheetid": "30",
+      "title": "Section IV: Alter's History, Attitudes, and Support of Substance Abuse Treatment",
       "description": "These questions will be asked about each person named in Section I"
     }
   ],
@@ -9475,7 +9481,126 @@
       "controlmodule": "boilerplate",
       "prompt": "<p>This section asks about your network members’ drug use. Please remember that all your responses are kept confidential. Below is the list of people you named.</p>",
       "content": ""
+    },
+    {
+      "eid": "2911",
+      "sheetid": "29",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "userpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Who has ever used drugs, like heroin, cocaine, prescription opioids, crack, or marijuana in their lifetime?</label>",
+      "namelist": "userpick"
+    },
+    {
+      "eid": "2912",
+      "sheetid": "29",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "use3pick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Who has used drugs, like heroin, cocaine, prescription opioids, crack, or marijuana in the past 3 months?</label>",
+      "namelist": "use3pick"
+    },
+    {
+      "eid": "2913",
+      "sheetid": "29",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "alterdrug",
+      "controlmodule": "niBoxpop",
+      "prompt": "<label>In the past 3 months, has each person used the following illegal drugs? (choose all that apply)</label>",
+      "namelist": "use3pick",
+      "controltype": "checklist",
+      "other": true,
+      "arrayPrompts": [
+        {
+          "arrayid": 0,
+          "prompt": " prescription opioids (e.g., Percocet, Oxycontin, Dilaudid, Dermol) ",
+          "value": "rxopioid"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "heroin",
+          "value": "heroin"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "non-prescription methadone",
+          "value": "methadone"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "non-prescription Suboxone/Zubxolv or buprenorphine ",
+          "value": "suboxone"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "cocaine/crack",
+          "value": "cocaine"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "methamphetamine",
+          "value": "meth"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "benzodiazepines (e.g., Valium, Xanax)",
+          "value": "benzos"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "marijuana",
+          "value": "weed"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "Used drugs every day ",
+          "value": "qdaydrug"
+        }
+      ]
+    },
+    {
+      "eid": "2914",
+      "sheetid": "29",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "altrivdu",
+      "controlmodule": "niBoxpop",
+      "prompt": "<label>In the past 3 months, has each person used the following illegal drugs? (choose all that apply)</label>",
+      "namelist": "use3pick",
+      "controltype": "checklist",
+      "other": true,
+      "arrayPrompts": [
+        {
+          "arrayid": 0,
+          "prompt": "Injects drugs ",
+          "value": "IVDU"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Injected drugs  with you",
+          "value": "VDUwego"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Shared needles  with you ",
+          "value": "ndlswego"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Shared cookers, cotton, or rinse water  with you",
+          "value": "cookwego"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Used a needle exchange program ",
+          "value": "usendlxp"
+        }
+      ]
     }
+
 
 
 
