@@ -31,7 +31,8 @@
       "20",
       "21",
       "22",
-      "23"
+      "23",
+      "24"
     ]
   },
   "sheetlogic": [
@@ -148,6 +149,11 @@
     {
       "sheetid": "23",
       "title": "Legal Status 1",
+      "description": ""
+    },
+    {
+      "sheetid": "24",
+      "title": "Social Network Inventory",
       "description": ""
     }
   ],
@@ -7826,7 +7832,1117 @@
       "title": "dysjail1",
       "controlmodule": "shorttext",
       "prompt": "<label>How many days have you spent in jail/prison in the past 30 days?</label>"
+    },
+    {
+      "eid": "legalstatusboil2",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "LegalStatusBoilerplate2",
+      "controlmodule": "boilerplate",
+      "prompt": "<p><em>During the past 3 months did you <strong>engage in</strong> the following crimes (whether or not it resulted in an arrest)?</em></p>",
+      "content": ""
+    },
+    {
+      "eid": "2302",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "prlviole",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Parole/Probation Violation</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2302b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 25,
+      "title": "prlviola",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2302",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2303",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 30,
+      "title": "shoplift",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Shoplifting/Vandalism</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2303b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 35,
+      "title": "shoplift",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2303",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2304",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 40,
+      "title": "drgtrafe",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Drug charges: Trafficking</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2304b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 45,
+      "title": "drgtrafa",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2304",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2305",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 50,
+      "title": "drgposse",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Drug charges: Possession</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2305b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 55,
+      "title": "drgpossa",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2305",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2306",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 60,
+      "title": "drgparae",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Drug charges: Paraphernalia</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2306b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 65,
+      "title": "drgparaa",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2306",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2307",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 70,
+      "title": "forgerye",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Forgery</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2307b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 75,
+      "title": "forgerya",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2307",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2308",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 80,
+      "title": "weaponse",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Weapons offense</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2308b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 85,
+      "title": "weaponsa",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2308",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2309",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 90,
+      "title": "thefte",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Theft by unlawful taking</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2309b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 95,
+      "title": "thefta",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2309",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2310",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 100,
+      "title": "burglrye",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Burglary, larceny, breaking & entering</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2310b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 105,
+      "title": "burglrya",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2310",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2311",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 110,
+      "title": "recstole",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Receiving stolen property</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2311b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 115,
+      "title": "recstola",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2311",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2312",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 120,
+      "title": "robberye",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Robbery</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2312b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 125,
+      "title": "robberya",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2312",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2313",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 130,
+      "title": "assaulte",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Assault</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2313b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 135,
+      "title": "assaulta",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2313",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2314",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 140,
+      "title": "arsone",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Arson</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2314b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 145,
+      "title": "arsona",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2314",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2315",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 150,
+      "title": "stalkine",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Stalking</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2315b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 155,
+      "title": "stalkina",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2315",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2316",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 160,
+      "title": "rapee",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Rape, sodomy, and sexual abuse</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2316b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 165,
+      "title": "rapea",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2316",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2317",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 170,
+      "title": "murdere",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Homicide/Manslaughter</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2317b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 175,
+      "title": "murdera",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2317",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2318",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 180,
+      "title": "prostite",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Prostitution</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2318b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 185,
+      "title": "prostita",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2318",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2319",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 190,
+      "title": "contmpte",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Contempt of court</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2319b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 195,
+      "title": "contmpta",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2319",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2320",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 200,
+      "title": "disordre",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Disorderly conduct, vagrancy, or public intoxication</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2320b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 205,
+      "title": "disordra",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2320",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2321",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 210,
+      "title": "domviole",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Domestic violence</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2321b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 215,
+      "title": "domviola",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2321",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2322",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 220,
+      "title": "duie",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Driving while intoxicated (DUI)</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2322b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 225,
+      "title": "duia",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2322",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2323",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 230,
+      "title": "drivinge",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Other major driving violations (reckless driving, driving on suspended license, speeding, etc...)</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2323b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 235,
+      "title": "duia",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2323",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2324",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 240,
+      "title": "tampere",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Tampering with physical evidence</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2324b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 245,
+      "title": "tampera",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2324",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2325",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 250,
+      "title": "chldsupe",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Child Support</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2325b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 255,
+      "title": "chldsupa",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2325",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2326",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 260,
+      "title": "endangre",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Wanton endangerment</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2326b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 265,
+      "title": "endangra",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2326",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2327",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 270,
+      "title": "fleeinge",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Fleeing and evading</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2327b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 275,
+      "title": "fleeinga",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2327",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2328",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 280,
+      "title": "othere",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Other</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2328b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 285,
+      "title": "othera",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2328",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 3 months how many times were you <strong>arrested</strong> for the previous crime?</label>"
+    },
+    {
+      "eid": "2329",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 290,
+      "title": "othersp",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2328",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>Please specify other</label>"
     }
+    
 
 
 
