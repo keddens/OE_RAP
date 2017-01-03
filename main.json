@@ -28,7 +28,8 @@
       "17",
       "18",
       "19",
-      "20"
+      "20",
+      "21"
     ]
   },
   "sheetlogic": [
@@ -130,6 +131,11 @@
     {
       "sheetid": "20",
       "title": "Health Status 1",
+      "description": ""
+    },
+    {
+      "sheetid": "21",
+      "title": "Health Status 2",
       "description": ""
     }
   ],
@@ -6252,6 +6258,524 @@
         {
           "arrayid": 4,
           "prompt": "About every day",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "eid": "healthstatusboil1",
+      "sheetid": "20",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "HealthStatusBoilerplate1",
+      "controlmodule": "boilerplate",
+      "prompt": "<label>NOTE FOR INTERVIEWER</label><br><em>These questions refer to the participants’ subjective feelings, not a diagnosis. Also, if they report attempted suicide or serious thoughts of suicide make sure you give them phone numbers for hotlines before ending the phone call.</em>",
+      "content": ""
+    },
+    {
+      "eid": "healthstatusboil2",
+      "sheetid": "20",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "HealthStatusBoilerplate2",
+      "controlmodule": "boilerplate",
+      "prompt": "<label> During the past 3 months (not a direct result of drug/alcohol use) did you ....?</label>",
+      "content": ""
+    },
+    {
+      "eid": "2001",
+      "sheetid": "20",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "expdprs3",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Experience serious depression</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2001b",
+      "sheetid": "20",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "expdprs1",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2001",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 30 days (not a direct result of drug/alcohol use) did you experience serious depression?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2002",
+      "sheetid": "20",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "expanx3",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Experience serious anxiety or tension</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2002b",
+      "sheetid": "20",
+      "poolid": "rapproject",
+      "sortIndex": 25,
+      "title": "expanx1",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2002",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 30 days (not a direct result of drug/alcohol use) did you experience serious anxiety or tension?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2003",
+      "sheetid": "20",
+      "poolid": "rapproject",
+      "sortIndex": 30,
+      "title": "exphall3",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Experience hallucinations</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2003b",
+      "sheetid": "20",
+      "poolid": "rapproject",
+      "sortIndex": 35,
+      "title": "exphall1",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2003",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 30 days (not a direct result of drug/alcohol use) did you experience hallucinations?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2004",
+      "sheetid": "20",
+      "poolid": "rapproject",
+      "sortIndex": 40,
+      "title": "expcog3",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Experience trouble understanding, concentrating, or remembering</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2004b",
+      "sheetid": "20",
+      "poolid": "rapproject",
+      "sortIndex": 45,
+      "title": "expcog1",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2004",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 30 days (not a direct result of drug/alcohol use) did you experience trouble understanding, concentrating, or remembering?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2005",
+      "sheetid": "20",
+      "poolid": "rapproject",
+      "sortIndex": 50,
+      "title": "exprage3",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Experience trouble controlling violent behavior, including episodes of rage</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2005b",
+      "sheetid": "20",
+      "poolid": "rapproject",
+      "sortIndex": 55,
+      "title": "exprage1",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2005",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 30 days (not a direct result of drug/alcohol use) did you experience trouble controlling violent behavior, including episodes of rage?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2006",
+      "sheetid": "20",
+      "poolid": "rapproject",
+      "sortIndex": 60,
+      "title": "expsuic3",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Experience serious thoughts of suicide</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2006b",
+      "sheetid": "20",
+      "poolid": "rapproject",
+      "sortIndex": 65,
+      "title": "expsuic1",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2006",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 30 days (not a direct result of drug/alcohol use) did you experience serious thoughts of suicide?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+    
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2007",
+      "sheetid": "20",
+      "poolid": "rapproject",
+      "sortIndex": 70,
+      "title": "atmsuic3",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Attempt suicide</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2007b",
+      "sheetid": "20",
+      "poolid": "rapproject",
+      "sortIndex": 75,
+      "title": "atmsuic1",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2007",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 30 days (not a direct result of drug/alcohol use) did you attempt suicide</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2008",
+      "sheetid": "20",
+      "poolid": "rapproject",
+      "sortIndex": 80,
+      "title": "rxemot3",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Been prescribed medication for any psychological or emotional problem</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2008b",
+      "sheetid": "20",
+      "poolid": "rapproject",
+      "sortIndex": 85,
+      "title": "rxemot1",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2008",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>During the past 30 days (not a direct result of drug/alcohol use) have you been prescribed medication for any psychological or emotional problem</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "2009",
+      "sheetid": "20",
+      "poolid": "rapproject",
+      "sortIndex": 90,
+      "title": "daysexp1",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How many days in the past 30 have you experienced these psychological or emotional problems?</label><br><em>(This refers to problems note in questions 2a-2f)</em>"
+    },
+    {
+      "eid": "2010",
+      "sheetid": "20",
+      "poolid": "rapproject",
+      "sortIndex": 95,
+      "title": "expmuch1",
+      "controlmodule": "radiolist",
+      "prompt": "<label>How much have you been troubled or bothered by these psychological or emotional problems in the past 30 days?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Not at all",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Slightly",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Moderately",
+          "value": "2"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Considerably",
+          "value": "3"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Extremely",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "eid": "2011",
+      "sheetid": "20",
+      "poolid": "rapproject",
+      "sortIndex": 100,
+      "title": "tximport",
+      "controlmodule": "radiolist",
+      "prompt": "<label>How important to you now is treatment for these psychological problems?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Not at all",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Slightly",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Moderately",
+          "value": "2"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Considerably",
+          "value": "3"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Extremely",
           "value": "4"
         }
       ]
