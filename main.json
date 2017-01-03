@@ -29,7 +29,8 @@
       "18",
       "19",
       "20",
-      "21"
+      "21",
+      "22"
     ]
   },
   "sheetlogic": [
@@ -136,6 +137,11 @@
     {
       "sheetid": "21",
       "title": "Health Status 2",
+      "description": ""
+    },
+    {
+      "sheetid": "22",
+      "title": "Health Status 3",
       "description": ""
     }
   ],
@@ -7365,6 +7371,196 @@
           "arrayid": 6,
           "prompt": "Correctional Facility (jail/prison)",
           "value": "7"
+        }
+      ]
+    },
+    {
+      "eid": "2122",
+      "sheetid": "21",
+      "poolid": "rapproject",
+      "sortIndex": 90,
+      "title": "hcvtxtyp",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2116",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>22. What type of treatment were you given?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Interferon or Pegylated Interferon-alpha (e.g. Pegasys, PegIntron, Sylatron, Roferon, Intron, Infergen)",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Ribavirin (e.g., Virazole, Rebetol, Copequs, Ribasphere, RibaPak, RivaTab)",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Combination interferon alpha-ribavirin (e.g., Pegetron, Redipen)",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Boceprevir (Victrelis)",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Teleprevir (Incivek)",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Other",
+          "value": "6"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "Not given treatment",
+          "value": "7"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "Refused treatment",
+          "value": "8"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "Don't Know",
+          "value": "97"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "Refuse to Answer",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "eid": "2123",
+      "sheetid": "21",
+      "poolid": "rapproject",
+      "sortIndex": 95,
+      "title": "hcvtxtyp",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2122",
+            "comparator": "!===",
+            "value": "7"
+          }
+        ]
+      },
+      "prompt": "<label>23. Did you complete the treatment as prescribed by your doctor?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Still in treatment",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "eid": "2124",
+      "sheetid": "21",
+      "poolid": "rapproject",
+      "sortIndex": 100,
+      "title": "hcvtxnoy",
+      "controlmodule": "checklist",
+      "other": true,
+      "otherPrompt": "Please specify other",
+      "conditions": {
+        "comparator": "||",
+        "values": [
+          {
+            "eid": "2121",
+            "comparator": "===",
+            "value": "7"
+          },
+          {
+            "eid": "2121",
+            "comparator": "===",
+            "value": "8"
+          }
+        ]
+      },
+      "prompt": "<label>24. What are the reasons you were not given or refused treatment? ( Check all that apply).</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "My doctor said I don’t need treatment at this time.",
+          "value": "docnoneed"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "My doctor said I had other health conditions that would interfere with the medicine.",
+          "value": "docnohlth"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "My doctor said he/she would not prescribe it to me if I was still using drugs.",
+          "value": "docnodrgs"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "I don't think that hepatitis C is bad enough that I need to take the medicine.",
+          "value": "hcvnotbad"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "I cannot afford the medicines.",
+          "value": "toocostly"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "My insurance doesn’t cover the treatment.",
+          "value": "noinsur"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "I do not have time for all of the doctor visits.",
+          "value": "notime"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "I do not have transportation to and from the doctor.",
+          "value": "notransp"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "I am afraid people would find out I have hepatitis C.",
+          "value": "noprivacy"
+        },
+        {
+          "arrayid": 9,
+          "prompt": "I am concerned about the side effects.",
+          "value": "sideeffects"
+        },
+        {
+          "arrayid": 10,
+          "prompt": "Prison/jail won’t provide treatment.",
+          "value": "notxinjail"
         }
       ]
     }
