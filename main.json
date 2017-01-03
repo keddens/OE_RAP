@@ -30,7 +30,8 @@
       "19",
       "20",
       "21",
-      "22"
+      "22",
+      "23"
     ]
   },
   "sheetlogic": [
@@ -142,6 +143,11 @@
     {
       "sheetid": "22",
       "title": "Health Status 3",
+      "description": ""
+    },
+    {
+      "sheetid": "23",
+      "title": "Legal Status 1",
       "description": ""
     }
   ],
@@ -7729,7 +7735,7 @@
       "sortIndex": 25,
       "title": "hivdx",
       "controlmodule": "radiolist",
-      "prompt": "<label>Have you ever been told by a doctor or nurse that you were infected with HIV, the virus that causes AIDS?</label>",
+      "prompt": "<label>31. Have you ever been told by a doctor or nurse that you were infected with HIV, the virus that causes AIDS?</label>",
       "arrayPrompts":[
         {
           "arrayid": 0,
@@ -7742,6 +7748,84 @@
           "value": "1"
         }
       ]
+    },
+    {
+      "eid": "2231",
+      "sheetid": "22",
+      "poolid": "rapproject",
+      "sortIndex": 30,
+      "title": "hivdxyr",
+      "controlmodule": "shorttext",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2230",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>31. In what year were you first told you were infected with HIV?</label>"
+    },
+    {
+      "eid": "2232",
+      "sheetid": "22",
+      "poolid": "rapproject",
+      "sortIndex": 35,
+      "title": "hivtx",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "2230",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>32. Did you seek treatment for HIV?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "legalstatusboil1",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "LegalStatusBoilerplate1",
+      "controlmodule": "boilerplate",
+      "prompt": "<p><em>This next set of questions ask about your involvement in crime and with the criminal justice system over the past 3 months.</em></p>",
+      "content": ""
+    },
+    {
+      "eid": "2301a",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "dysjail3",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How many days have you spent in jail/prison in the past 3 months?</label>"
+    },
+    {
+      "eid": "2301b",
+      "sheetid": "23",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "dysjail1",
+      "controlmodule": "shorttext",
+      "prompt": "<label>How many days have you spent in jail/prison in the past 30 days?</label>"
     }
 
 
