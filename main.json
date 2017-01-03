@@ -32,7 +32,11 @@
       "21",
       "22",
       "23",
-      "24"
+      "24",
+      "25",
+      "26",
+      "27",
+      "28"
     ]
   },
   "sheetlogic": [
@@ -155,6 +159,26 @@
       "sheetid": "24",
       "title": "Social Network Inventory",
       "description": ""
+    },
+    {
+      "sheetid": "25",
+      "title": "Section I: Name Generator Questions",
+      "description": ""
+    },
+    {
+      "sheetid": "26",
+      "title": "Section I: Name Generator Questions (continued)",
+      "description": ""
+    },
+    {
+      "sheetid": "27",
+      "title": "Section I: Name Generator Questions (continued)",
+      "description": ""
+    },
+    {
+      "sheetid": "28",
+      "title": "Section II: Alter Characteristics and Functions",
+      "description": "These questions will be asked about each person named in Section I"
     }
   ],
   "eddilogic": [
@@ -8941,7 +8965,89 @@
         ]
       },
       "prompt": "<label>Please specify other</label>"
-    }
+    },
+    {
+      "eid": "namegenboil",
+      "sheetid": "24",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "SocialNetworkInventoryBoilerplate",
+      "controlmodule": "boilerplate",
+      "prompt": "<p>Social Network Inventory</p>",
+      "content": "<p>In this section I would like to get an idea of the people who are a part of your life in a number of different ways. I will be reading descriptions of ways that people may play roles in your life, or be important to you. These people might be friends, people you use drugs with, family members, sex partners, health care professionals, or other people you might know.</p><p>Please try to think about as many people as possible as I ask these questions.</p><p>While we understand the importance and influence of people in your life that are deceased or the role of God, this section of the interview will only collect the names of people who are alive.</p><p>Please also remember that all the information you tell us today will be kept strictly confidential.</p>"
+    },
+    {
+      "eid": "2501",
+      "sheetid": "25",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "gen20",
+      "controlmodule": "basicnamegen",
+      "prompt": "<p>Name 20 people you know and have communicated with in the past 3 months since your release from prison. Please provide their first name and last initial.</p><p><em>Participants can name up to 20 individuals, only first name and the first letter of the last name are recorded)</em></p>",
+      "namelist": "gen20alters"
+    },
+    {
+      "eid": "2501a",
+      "sheetid": "25",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "gen20add",
+      "controlmodule": "basicnamegen",
+      "prompt": "<p>Is there anyone else you can think of?</p><p><em>(If they don’t name up to 20 people)</em></p>",
+      "namelist": "gen20alters"
+    },
+    {
+      "eid": "2602",
+      "sheetid": "26",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "SSpick",
+      "controlmodule": "namepick",
+      "prompt": "<p>Of the people you have named, who have you been able to count on for social support in the past 3 months since your release from prison? When I say social support, I mean things like:</p><p>- someone who you can talk to about personal or private matters</p><p>- someone who would give up their time and energy to help you</p><p>- someone who would lend you $25, someone who you could trust to go get a check cashed for you or to guy groceries</p><p>- someone you might eat meals with on a regular basis</p><p>- someone who you have fun with</p><p>- someone who you could ask for advice or help about health problems</p><p>- someone who would give you a place to stay if you needed it</p>",
+      "namelist": "SSnet"
+    },
+    {
+      "eid": "2602a",
+      "sheetid": "26",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "SSadd",
+      "controlmodule": "basicnamegen",
+      "prompt": "<p>Is there anyone else you can think of that you can count on for social support since your release that wasn’t named? If so, please provide their first name and initial.</p>",
+      "namelist": "SSnet"
+    },
+    {
+      "eid": "2703",
+      "sheetid": "27",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "drugpick",
+      "controlmodule": "namepick",
+      "prompt": "<p>Of all of the people you have named, who have you used drugs with in the past 3 months since your release from prison?</p>",
+      "namelist": "drugNet"
+    },
+    {
+      "eid": "2703a",
+      "sheetid": "27",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "drugadd",
+      "controlmodule": "basicnamegen",
+      "prompt": "<p>Is there anyone else you can think of that you that you have used drugs with since your release that wasn’t named? If so, please provide their first name and initial.</p>",
+      "namelist": "drugNet"
+    },
+    {
+      "eid": "altercharacteristicboil",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "AlterCharacteristicboil",
+      "controlmodule": "boilerplate",
+      "prompt": "<p>Now, I would like to get some information about the people you have just listed. Here is a list of their names.</p>",
+      "content": ""
+    },
+
+
     
 
 
