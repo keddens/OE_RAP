@@ -9046,6 +9046,197 @@
       "prompt": "<p>Now, I would like to get some information about the people you have just listed. Here is a list of their names.</p>",
       "content": ""
     },
+    {
+      "eid": "2801",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "alterSex",
+      "controlmodule": "basicnameinterpret",
+      "prompt": "<label>What is each peron's gender?</label>",
+      "namelist": "gen20alters",
+      "niEddi": "radiolist",
+      "niEddiDetails": {
+        "arrayPrompts": [
+          {
+            "arrayid": 0,
+            "prompt": "Male",
+            "value": "0"
+          },
+          {
+            "arrayid": 1,
+            "prompt": "Female",
+            "value": "1"
+          },
+          {
+            "arrayid": 2,
+            "prompt": "Don't Know",
+            "value": "97"
+          },
+          {
+            "arrayid": 3,
+            "prompt": "Refused",
+            "value": "98"
+          }
+        ]
+
+      }
+    },
+    {
+      "eid": "2802",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "alterAge",
+      "controlmodule": "basicnameinterpret",
+      "prompt": "<label>What is each person’s age? If you don’t know for sure, provide your best guess.</label>",
+      "namelist": "gen20alters",
+      "niEddi": "shorttext",
+    },
+    {
+      "eid": "2803",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "alterRel",
+      "controlmodule": "niBoxpop",
+      "prompt": "<label>How are you connected to each person? Is this person your...</label>",
+      "namelist": "gen20alters",
+      "controltype": "radio",
+      "other": true,
+      "arrayPrompts": [
+        {
+          "arrayid": 0,
+          "prompt": "Husband/Wife",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Girl or boyfriend/partner, significant other",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Casual dating/sex partner",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Parent or step-parent",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Daughter/Son",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Sibling, step-sibling, or half—sibling",
+          "value": "6"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "Grandparent",
+          "value": "7"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "Other family (e.g,.Uncle/Aunt, cousin)",
+          "value": "8"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "Roommate or housemate",
+          "value": "9"
+        },
+        {
+          "arrayid": 9,
+          "prompt": "Co-worker",
+          "value": "10"
+        },
+        {
+          "arrayid": 10,
+          "prompt": "Friend",
+          "value": "11"
+        },
+        {
+          "arrayid": 11,
+          "prompt": "Drug/shooting/running buddy",
+          "value": "12"
+        },
+        {
+          "arrayid": 12,
+          "prompt": "Drug/needle dealer",
+          "value": "13"
+        },
+        {
+          "arrayid": 13,
+          "prompt": "Health care professional (e.g., doctor, therapist, social worker)",
+          "value": "14"
+        },
+        {
+          "arrayid": 14,
+          "prompt": "Other",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "eid": "2804",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "drugpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Who currently has a 9-5 job or is working full time?</label>",
+      "namelist": "workpick"
+    },
+    {
+      "eid": "2805",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 25,
+      "title": "livepick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Who lives in the same county as you?</label>",
+      "namelist": "livepick"
+    },
+    {
+      "eid": "2806",
+      "sheetid": "28",
+      "poolid": "rapproject",
+      "sortIndex": 30,
+      "title": "altrtalk",
+      "controlmodule": "niBoxpop",
+      "prompt": "<label>How often did you talk with each person in the past 3 months?</label>",
+      "namelist": "gen20alters",
+      "controltype": "radio",
+      "other": true,
+      "arrayPrompts": [
+        {
+          "arrayid": 0,
+          "prompt": "Daily",
+          "value": "daily"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Weekly",
+          "value": "weekly"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Monthly",
+          "value": "monthly"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Less than once a month",
+          "value": "lessoftn"
+        }
+      ]
+    }
+
 
 
     
