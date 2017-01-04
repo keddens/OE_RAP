@@ -38,7 +38,8 @@
       "27",
       "28",
       "29",
-      "30"
+      "30",
+      "altertiessheet"
     ]
   },
   "sheetlogic": [
@@ -191,6 +192,11 @@
       "sheetid": "30",
       "title": "Section IV: Alter's History, Attitudes, and Support of Substance Abuse Treatment",
       "description": "These questions will be asked about each person named in Section I"
+    },
+    {
+      "sheetid": "altertiessheet",
+      "title": "Section V: Alter/Alter Ties",
+      "description": ""
     }
   ],
   "eddilogic": [
@@ -9599,7 +9605,239 @@
           "value": "usendlxp"
         }
       ]
+    },
+    {
+      "eid": "altercharac-boil",
+      "sheetid": "30",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "AlterHistoryBoilerplate",
+      "controlmodule": "boilerplate",
+      "prompt": "<p>This next section asks about substance use disorder treatment. Below is the list of people you named. Now we’re going to ask you a few questions about them, and we’d like you to choose the names of the people who fit the description.</p>",
+      "content": ""
+    },
+    {
+      "eid": "3015a",
+      "sheetid": "30",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "recvpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Is in recovery from a substance use disorder</label>",
+      "namelist": "recvpick"
+    },
+    {
+      "eid": "3015b",
+      "sheetid": "30",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "intxpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Is currently in a treatment program for a substance use disorder</label>",
+      "namelist": "intxpick"
+    },
+    {
+      "eid": "3015c",
+      "sheetid": "30",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "rxtxpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Is currently taking a legally prescribed medication for the treatment of a substance use disorder (e.g., methadone, Suboxone, or Vivitrol that has been prescribed by a doctor)</label>",
+      "namelist": "rxtxpick"
+    },
+    {
+      "eid": "3015d",
+      "sheetid": "30",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "AApick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Has attended a self-help group such as Alcoholics Anonymous (AA) or Narcotics Anonymous (NA) in the past 3 months</label>",
+      "namelist": "AApick"
+    },
+    {
+      "eid": "3015e",
+      "sheetid": "30",
+      "poolid": "rapproject",
+      "sortIndex": 25,
+      "title": "kdupick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Knows you have a substance use disorder</label>",
+      "namelist": "kdupick"
+    },
+    {
+      "eid": "alterknow-boil",
+      "sheetid": "30",
+      "poolid": "rapproject",
+      "sortIndex": 30,
+      "title": "AlterKnowledgeBoilerplate",
+      "controlmodule": "boilerplate",
+      "prompt": "<p> Who is <u>knowledgeable</u> about the following treatment approaches?</p>",
+      "content": ""
+    },
+    {
+      "eid": "3016a",
+      "sheetid": "30",
+      "poolid": "rapproject",
+      "sortIndex": 35,
+      "title": "kntxpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Inpatient/residential or outpatient treatment</label>",
+      "namelist": "kntxpick"
+    },
+    {
+      "eid": "3016b",
+      "sheetid": "30",
+      "poolid": "rapproject",
+      "sortIndex": 40,
+      "title": "knvvpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Vivitrol (extended-release naltrexone) for the treatment of opioid use disorder</label>",
+      "namelist": "knvvpick"
+    },
+    {
+      "eid": "3016c",
+      "sheetid": "30",
+      "poolid": "rapproject",
+      "sortIndex": 45,
+      "title": "knmdpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>methadone to treat opioid use disorder</label>",
+      "namelist": "knmdpick"
+    },
+    {
+      "eid": "3016d",
+      "sheetid": "30",
+      "poolid": "rapproject",
+      "sortIndex": 50,
+      "title": "knsbpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>Suboxone to treat opioid use disorder</label>",
+      "namelist": "knsbpick"
+    },
+    {
+      "eid": "3016e",
+      "sheetid": "30",
+      "poolid": "rapproject",
+      "sortIndex": 55,
+      "title": "knAApick",
+      "controlmodule": "namepick",
+      "prompt": "<label>self-help group such as Alcoholics Anonymous (AA) or Narcotics Anonymous (NA)</label>",
+      "namelist": "knAApick"
+    },
+    {
+      "eid": "3017",
+      "sheetid": "30",
+      "poolid": "rapproject",
+      "sortIndex": 60,
+      "title": "talksutx",
+      "controlmodule": "niBoxpop",
+      "prompt": "<label>In the past 3 months, how often have you <u>discussed</u> substance use disorder treatment with eac pperson?</label>",
+      "namelist": "gen20alters",
+      "controltype": "radio",
+      "other": true,
+      "arrayPrompts": [
+        {
+          "arrayid": 0,
+          "prompt": "Never",
+          "value": "never"
+        }
+        {
+          "arrayid": 1,
+          "prompt": "Daily",
+          "value": "daily"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Weekly",
+          "value": "weekly"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Monthly",
+          "value": "monthly"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Less than once a month",
+          "value": "lessoftn"
+        }
+      ]
+    },
+    {
+      "eid": "alterencourage-boil",
+      "sheetid": "30",
+      "poolid": "rapproject",
+      "sortIndex": 65,
+      "title": "AlterEncourageBoilerplate",
+      "controlmodule": "boilerplate",
+      "prompt": "<p>In the past 3 months, who has <u>encouraged</u>....</p>",
+      "content": ""
+    },
+    {
+      "eid": "3018a",
+      "sheetid": "30",
+      "poolid": "rapproject",
+      "sortIndex": 70,
+      "title": "entxpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>you to seek treatment in an inpatient/residential or outpatient center?</label>",
+      "namelist": "entxpick"
+    },
+    {
+      "eid": "3018b",
+      "sheetid": "30",
+      "poolid": "rapproject",
+      "sortIndex": 75,
+      "title": "envvpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>you to use Vivitrol?</label>",
+      "namelist": "envvpick"
+    },
+    {
+      "eid": "3018c",
+      "sheetid": "30",
+      "poolid": "rapproject",
+      "sortIndex": 80,
+      "title": "enmdpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>you to use methadone legally prescribed by a doctor to treat opioid use disorder?</label>",
+      "namelist": "enmdpick"
+    },
+    {
+      "eid": "3018d",
+      "sheetid": "30",
+      "poolid": "rapproject",
+      "sortIndex": 85,
+      "title": "ensbpick",
+      "controlmodule": "namepick",
+      "prompt": "<label>you to use Suboxone® legally prescribed by a doctor to treat opioid use disorder?</label>",
+      "namelist": "ensbpick"
+    },
+    {
+      "eid": "3018e",
+      "sheetid": "30",
+      "poolid": "rapproject",
+      "sortIndex": 90,
+      "title": "enAApick",
+      "controlmodule": "namepick",
+      "prompt": "<label>you to attend 12-step meetings, such as Alcoholics Anonymous (AA) or Narcotics Anonymous (NA)?</label>",
+      "namelist": "enAApick"
+    },
+    {
+      "eid": "xxx",
+      "sheetid": "altertiessheet",
+      "poolid": "rapproject",
+      "sortIndex": 0,
+      "title": "alterties",
+      "controlmodule": "nodelink",
+      "prompt": "<p>For our last question, we would like to ask about all the people in your life that you have listed and their relationship with each other. Below is a set of circles, with each one representing one of the people you have named as being a part of your life in the past 3 months.  Which of the people you have named talk to one another, even when you aren’t around? Meaning, even if they know one another because of you, do they have their own relationship where they might talk or spend time together even if you aren’t with them? Please draw a line between circles to indicate that those two people talk to one another. You can do this by dragging your finger between the circles. You can just re-draw a line to remove it.</p>"
     }
+
+
+
+
 
 
 
