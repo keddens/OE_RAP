@@ -2440,6 +2440,936 @@
       "content": ""
     },
     {
+      "eid": "601a",
+      "sheetid": "6",
+      "poolid": "rapproject",
+      "sortIndex": 5,
+      "title": "PNobthin",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Did you need help with obtaining health insurance when you left prison?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "601b",
+      "sheetid": "6",
+      "poolid": "rapproject",
+      "sortIndex": 10,
+      "title": "PNgethin",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "601a",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>Did you receive help?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "N/A",
+          "value": "999"
+        }
+      ]
+    },
+    {
+      "eid": "601c",
+      "sheetid": "6",
+      "poolid": "rapproject",
+      "sortIndex": 15,
+      "title": "PNathin",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "601b",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "other": true,
+      "otherPrompt": "<label>Please specify other</label>",
+      "prompt": "<label>Where did you receive help?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Probation/parole office (but someone other than a Social Service Clinician, SSC)",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Social service clinician (SSC)",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Community substance abuse treatment provider (inpatient)",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Community substance abuse treatment provider (outpatient)",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Doctor's office or private clinic",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Community/migrant/rural clinic or health center",
+          "value": "6"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "County/city/public hospital outpatient clinic",
+          "value": "7"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "Private/other hospital outpatient clinic",
+          "value": "8"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "County/city/public hospital inpatient",
+          "value": "9"
+        },
+        {
+          "arrayid": 9,
+          "prompt": "Private/other hospital inpatient",
+          "value": "10"
+        },
+        {
+          "arrayid": 10,
+          "prompt": "Hospital emergency room",
+          "value": "11"
+        },
+        {
+          "arrayid": 11,
+          "prompt": "Psychiatric hospital or clinic",
+          "value": "12"
+        },
+        {
+          "arrayid": 12,
+          "prompt": "Outreach, health education, or prevention program",
+          "value": "13"
+        },
+        {
+          "arrayid": 13,
+          "prompt": "Home",
+          "value": "14"
+        },
+        {
+          "arrayid": 14,
+          "prompt": "Prison or jail staff",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "eid": "602a",
+      "sheetid": "6",
+      "poolid": "rapproject",
+      "sortIndex": 20,
+      "title": "PNobtmed",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Did you need help with medical care when you left prison?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "602b",
+      "sheetid": "6",
+      "poolid": "rapproject",
+      "sortIndex": 25,
+      "title": "PNgetmed",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "602a",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>Did you receive help?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "N/A",
+          "value": "999"
+        }
+      ]
+    },
+    {
+      "eid": "602c",
+      "sheetid": "6",
+      "poolid": "rapproject",
+      "sortIndex": 30,
+      "title": "PNatmed",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "602b",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "other": true,
+      "otherPrompt": "<label>Please specify other</label>",
+      "prompt": "<label>Where did you receive help?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Probation/parole office (but someone other than a Social Service Clinician, SSC)",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Social service clinician (SSC)",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Community substance abuse treatment provider (inpatient)",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Community substance abuse treatment provider (outpatient)",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Doctor's office or private clinic",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Community/migrant/rural clinic or health center",
+          "value": "6"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "County/city/public hospital outpatient clinic",
+          "value": "7"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "Private/other hospital outpatient clinic",
+          "value": "8"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "County/city/public hospital inpatient",
+          "value": "9"
+        },
+        {
+          "arrayid": 9,
+          "prompt": "Private/other hospital inpatient",
+          "value": "10"
+        },
+        {
+          "arrayid": 10,
+          "prompt": "Hospital emergency room",
+          "value": "11"
+        },
+        {
+          "arrayid": 11,
+          "prompt": "Psychiatric hospital or clinic",
+          "value": "12"
+        },
+        {
+          "arrayid": 12,
+          "prompt": "Outreach, health education, or prevention program",
+          "value": "13"
+        },
+        {
+          "arrayid": 13,
+          "prompt": "Home",
+          "value": "14"
+        },
+        {
+          "arrayid": 14,
+          "prompt": "Prison or jail staff",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "eid": "603a",
+      "sheetid": "6",
+      "poolid": "rapproject",
+      "sortIndex": 35,
+      "title": "PNobtmen",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Did you need help with mental health services when you left prison?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "603b",
+      "sheetid": "6",
+      "poolid": "rapproject",
+      "sortIndex": 40,
+      "title": "PNgetmen",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "603a",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>Did you receive help?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "N/A",
+          "value": "999"
+        }
+      ]
+    },
+    {
+      "eid": "603c",
+      "sheetid": "6",
+      "poolid": "rapproject",
+      "sortIndex": 45,
+      "title": "PNatmen",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "603b",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "other": true,
+      "otherPrompt": "<label>Please specify other</label>",
+      "prompt": "<label>Where did you receive help?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Probation/parole office (but someone other than a Social Service Clinician, SSC)",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Social service clinician (SSC)",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Community substance abuse treatment provider (inpatient)",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Community substance abuse treatment provider (outpatient)",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Doctor's office or private clinic",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Community/migrant/rural clinic or health center",
+          "value": "6"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "County/city/public hospital outpatient clinic",
+          "value": "7"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "Private/other hospital outpatient clinic",
+          "value": "8"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "County/city/public hospital inpatient",
+          "value": "9"
+        },
+        {
+          "arrayid": 9,
+          "prompt": "Private/other hospital inpatient",
+          "value": "10"
+        },
+        {
+          "arrayid": 10,
+          "prompt": "Hospital emergency room",
+          "value": "11"
+        },
+        {
+          "arrayid": 11,
+          "prompt": "Psychiatric hospital or clinic",
+          "value": "12"
+        },
+        {
+          "arrayid": 12,
+          "prompt": "Outreach, health education, or prevention program",
+          "value": "13"
+        },
+        {
+          "arrayid": 13,
+          "prompt": "Home",
+          "value": "14"
+        },
+        {
+          "arrayid": 14,
+          "prompt": "Prison or jail staff",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "eid": "604a",
+      "sheetid": "6",
+      "poolid": "rapproject",
+      "sortIndex": 50,
+      "title": "PNobtstx",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Did you need help with subtance abuse treatment when you left prison?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "604b",
+      "sheetid": "6",
+      "poolid": "rapproject",
+      "sortIndex": 55,
+      "title": "PNgetstx",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "604a",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>Did you receive help?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "N/A",
+          "value": "999"
+        }
+      ]
+    },
+    {
+      "eid": "604c",
+      "sheetid": "6",
+      "poolid": "rapproject",
+      "sortIndex": 60,
+      "title": "PNatstx",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "604b",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "other": true,
+      "otherPrompt": "<label>Please specify other</label>",
+      "prompt": "<label>Where did you receive help?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Probation/parole office (but someone other than a Social Service Clinician, SSC)",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Social service clinician (SSC)",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Community substance abuse treatment provider (inpatient)",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Community substance abuse treatment provider (outpatient)",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Doctor's office or private clinic",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Community/migrant/rural clinic or health center",
+          "value": "6"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "County/city/public hospital outpatient clinic",
+          "value": "7"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "Private/other hospital outpatient clinic",
+          "value": "8"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "County/city/public hospital inpatient",
+          "value": "9"
+        },
+        {
+          "arrayid": 9,
+          "prompt": "Private/other hospital inpatient",
+          "value": "10"
+        },
+        {
+          "arrayid": 10,
+          "prompt": "Hospital emergency room",
+          "value": "11"
+        },
+        {
+          "arrayid": 11,
+          "prompt": "Psychiatric hospital or clinic",
+          "value": "12"
+        },
+        {
+          "arrayid": 12,
+          "prompt": "Outreach, health education, or prevention program",
+          "value": "13"
+        },
+        {
+          "arrayid": 13,
+          "prompt": "Home",
+          "value": "14"
+        },
+        {
+          "arrayid": 14,
+          "prompt": "Prison or jail staff",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "eid": "605a",
+      "sheetid": "6",
+      "poolid": "rapproject",
+      "sortIndex": 65,
+      "title": "PNobtorx",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Did you need help with obtaining medications for the treatment of opioid use disorderd when you left prison?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "605b",
+      "sheetid": "6",
+      "poolid": "rapproject",
+      "sortIndex": 70,
+      "title": "PNgetorx",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "605a",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>Did you receive help?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "N/A",
+          "value": "999"
+        }
+      ]
+    },
+    {
+      "eid": "605c",
+      "sheetid": "6",
+      "poolid": "rapproject",
+      "sortIndex": 75,
+      "title": "PNatorx",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "605b",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "other": true,
+      "otherPrompt": "<label>Please specify other</label>",
+      "prompt": "<label>Where did you receive help?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Probation/parole office (but someone other than a Social Service Clinician, SSC)",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Social service clinician (SSC)",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Community substance abuse treatment provider (inpatient)",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Community substance abuse treatment provider (outpatient)",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Doctor's office or private clinic",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Community/migrant/rural clinic or health center",
+          "value": "6"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "County/city/public hospital outpatient clinic",
+          "value": "7"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "Private/other hospital outpatient clinic",
+          "value": "8"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "County/city/public hospital inpatient",
+          "value": "9"
+        },
+        {
+          "arrayid": 9,
+          "prompt": "Private/other hospital inpatient",
+          "value": "10"
+        },
+        {
+          "arrayid": 10,
+          "prompt": "Hospital emergency room",
+          "value": "11"
+        },
+        {
+          "arrayid": 11,
+          "prompt": "Psychiatric hospital or clinic",
+          "value": "12"
+        },
+        {
+          "arrayid": 12,
+          "prompt": "Outreach, health education, or prevention program",
+          "value": "13"
+        },
+        {
+          "arrayid": 13,
+          "prompt": "Home",
+          "value": "14"
+        },
+        {
+          "arrayid": 14,
+          "prompt": "Prison or jail staff",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "eid": "606a",
+      "sheetid": "6",
+      "poolid": "rapproject",
+      "sortIndex": 80,
+      "title": "PNobtjob",
+      "controlmodule": "radiolist",
+      "prompt": "<label>Did you need help with employment or job training when you left prison?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "eid": "606b",
+      "sheetid": "6",
+      "poolid": "rapproject",
+      "sortIndex": 85,
+      "title": "PNgetjob",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "606a",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "prompt": "<label>Did you receive help?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "No",
+          "value": "0"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Yes",
+          "value": "1"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "N/A",
+          "value": "999"
+        }
+      ]
+    },
+    {
+      "eid": "606c",
+      "sheetid": "6",
+      "poolid": "rapproject",
+      "sortIndex": 90,
+      "title": "PNatjob",
+      "controlmodule": "radiolist",
+      "conditions": {
+        "comparator": "&&",
+        "values": [
+          {
+            "eid": "606b",
+            "comparator": "===",
+            "value": "1"
+          }
+        ]
+      },
+      "other": true,
+      "otherPrompt": "<label>Please specify other</label>",
+      "prompt": "<label>Where did you receive help?</label>",
+      "arrayPrompts":[
+        {
+          "arrayid": 0,
+          "prompt": "Probation/parole office (but someone other than a Social Service Clinician, SSC)",
+          "value": "1"
+        },
+        {
+          "arrayid": 1,
+          "prompt": "Social service clinician (SSC)",
+          "value": "2"
+        },
+        {
+          "arrayid": 2,
+          "prompt": "Community substance abuse treatment provider (inpatient)",
+          "value": "3"
+        },
+        {
+          "arrayid": 3,
+          "prompt": "Community substance abuse treatment provider (outpatient)",
+          "value": "4"
+        },
+        {
+          "arrayid": 4,
+          "prompt": "Doctor's office or private clinic",
+          "value": "5"
+        },
+        {
+          "arrayid": 5,
+          "prompt": "Community/migrant/rural clinic or health center",
+          "value": "6"
+        },
+        {
+          "arrayid": 6,
+          "prompt": "County/city/public hospital outpatient clinic",
+          "value": "7"
+        },
+        {
+          "arrayid": 7,
+          "prompt": "Private/other hospital outpatient clinic",
+          "value": "8"
+        },
+        {
+          "arrayid": 8,
+          "prompt": "County/city/public hospital inpatient",
+          "value": "9"
+        },
+        {
+          "arrayid": 9,
+          "prompt": "Private/other hospital inpatient",
+          "value": "10"
+        },
+        {
+          "arrayid": 10,
+          "prompt": "Hospital emergency room",
+          "value": "11"
+        },
+        {
+          "arrayid": 11,
+          "prompt": "Psychiatric hospital or clinic",
+          "value": "12"
+        },
+        {
+          "arrayid": 12,
+          "prompt": "Outreach, health education, or prevention program",
+          "value": "13"
+        },
+        {
+          "arrayid": 13,
+          "prompt": "Home",
+          "value": "14"
+        },
+        {
+          "arrayid": 14,
+          "prompt": "Prison or jail staff",
+          "value": "15"
+        }
+      ]
+    },
+    {
       "eid": "reentry-boil3",
       "sheetid": "7",
       "poolid": "rapproject",
@@ -9109,7 +10039,7 @@
       "controlmodule": "basicnameinterpret",
       "prompt": "<label>What is each person’s age? If you don’t know for sure, provide your best guess.</label>",
       "namelist": "gen20alters",
-      "niEddi": "shorttext",
+      "niEddi": "shorttext"
     },
     {
       "eid": "2803",
@@ -9742,7 +10672,7 @@
           "arrayid": 0,
           "prompt": "Never",
           "value": "never"
-        }
+        },
         {
           "arrayid": 1,
           "prompt": "Daily",
