@@ -248,7 +248,7 @@
       "title": "DemoBoil",
       "controlmodule": "boilerplate",
       "prompt": "<em>READ<em>",
-      "content": "<p>Next, I would like to ask your some questions about your background.  Please remember your answers will be kept private.</p>"
+      "content": "<p>Next, I would like to ask you some questions about your background.  Please remember your answers will be kept private.</p>"
     },
     {
       "eid": "101",
@@ -303,7 +303,7 @@
       "sortIndex": 15,
       "title": "ParoleCy",
       "controlmodule": "radiolist",
-      "prompt": "<label>In what county do you report to your probabtion officer (PO)?</label>",
+      "prompt": "<label>In what county do you report to your probation officer (PO)?</label>",
       "arrayPrompts":[
         {
           "arrayid": 0,
@@ -725,6 +725,7 @@
     },
     {
       "_comment": "the select controlmodule doesn't seem to be working correctly",
+      "_comment": "KSE - Just change this to a radiolist",
       "eid": "107",
       "sheetid": "2",
       "poolid": "rapproject",
@@ -804,6 +805,7 @@
       ]
     },
     {
+      "_comment": "KSE -- You can just use the Other = True function here to automatically have the other option instead of the conditional formatting here.",
       "eid": "109",
       "sheetid": "2",
       "poolid": "rapproject",
@@ -1165,6 +1167,7 @@
     },
     {
       "_comment": "maybe this could be a numeric entry instead?",
+      "_comment": "KSE - unfortunately there isn't a numeric entry other than shorttext right now.",
       "eid": "116",
       "sheetid": "2",
       "poolid": "rapproject",
@@ -1175,6 +1178,7 @@
     },
     {
       "_comment": "turn this into select/radio if carrie gives us a list of counties?",
+      "_comment": "KSE - yes, make this a radio with the counties she gave us, with a specify other category in case they aren't in an Appalachian county.",
       "eid": "117",
       "sheetid": "2",
       "poolid": "rapproject",
@@ -1185,6 +1189,7 @@
     },
     {
       "_comment": "maybe this could be a numeric entry instead?",
+      "_comment": "KSE - unfortunately, no.",
       "eid": "118",
       "sheetid": "2",
       "poolid": "rapproject",
@@ -2048,7 +2053,7 @@
       "sortIndex": 15,
       "title": "relgood",
       "controlmodule": "radiolist",
-      "prompt": "<label>Do you consider yourself a member of a religious group?</label>",
+      "prompt": "<label>Do you consider yourself to be a good member of your religion?</label>",
       "arrayPrompts":[
         {
           "arrayid": 0,
@@ -2223,11 +2228,12 @@
       "content": "<br><em>For each of the following statements, please indicate the extent of your agreement or disagreement as it describes your personal spiritual experience.  When I refer to a \"higher power,\" please understand that that could mean different things to different people, for example:  a Christian God, forms of nature, energy...or other things that people may choose to believe in.  When answering these questions, please refer to your own personal belief systems.</em><br><br>"
     },
     {
+      "_comment": "Where is the rest of the spiritual well-being scale? And the oe slider module? If we don't use the slider we at least have to put the rest of the questions in here in radiolist format.",
       "eid": "209",
       "sheetid": "4",
       "poolid": "rapproject",
       "sortIndex": 5,
-      "title": "relgood",
+      "title": "SWBS",
       "controlmodule": "radiolist",
       "prompt": "<label>I don't find much satisfaction in private prayer.  (Choose one)</label>",
       "arrayPrompts":[
@@ -2243,22 +2249,22 @@
         },
         {
           "arrayid": 2,
-          "prompt": "Moderatley Disagree",
+          "prompt": "Moderately Disagree",
           "value": "3"
         },
         {
           "arrayid": 3,
-          "prompt": "Moderatley Agree",
+          "prompt": "Moderately Agree",
           "value": "4"
         },
         {
           "arrayid": 4,
-          "prompt": "Moderatley Agree",
+          "prompt": "Agree",
           "value": "5"
         },
         {
           "arrayid": 5,
-          "prompt": "Moderatley Strongly Agree",
+          "prompt": "Strongly Agree",
           "value": "6"
         },
         {
@@ -3066,7 +3072,7 @@
       "sortIndex": 65,
       "title": "PNobtorx",
       "controlmodule": "radiolist",
-      "prompt": "<label>Did you need help with obtaining medications for the treatment of opioid use disorderd when you left prison?</label>",
+      "prompt": "<label>Did you need help with obtaining medications for the treatment of opioid use disorder when you left prison?</label>",
       "arrayPrompts":[
         {
           "arrayid": 0,
@@ -4551,7 +4557,7 @@
       "sortIndex": 30,
       "title": "vvinmtsp",
       "controlmodule": "radiolist",
-      "prompt": "<label>How much do you agree with this statement:<u>Other inmates</u> who are supportive of the use of Vivitrol?</label>",
+      "prompt": "<label>How much do you agree with this statement:<u>Other inmates</u> are supportive of the use of Vivitrol?</label>",
       "arrayPrompts":[
         {
           "arrayid": 0,
@@ -4661,7 +4667,7 @@
       "sortIndex": 50,
       "title": "vvinjy",
       "controlmodule": "checklist",
-      "prompt": "<label>Are any of the following reasons why you did not get a Vivitrol injection while incarcerated?</label><br><em>(read list and check all that apply, then skip to question #40)</em>",
+      "prompt": "<label>Are any of the following reasons why you did not get a Vivitrol injection while incarcerated?</label><br><em>(read list and check all that apply)</em>",
       "other": true,
       "otherPrompt": "Please specify other",
       "arrayPrompts":[
@@ -4717,11 +4723,6 @@
         },
         {
           "arrayid": 10,
-          "prompt": "",
-          "value": ""
-        },
-        {
-          "arrayid": 11,
           "prompt": "preferred to use another type of medication assisted treatment after release such as methadone or buprenorphine (also known as Suboxone and Zubsolv)",
           "value": "othermed"
         }
@@ -4806,7 +4807,7 @@
       "sortIndex": 5,
       "title": "vvinjy",
       "controlmodule": "checklist",
-      "prompt": "<label>Are any of the following statements reasons why you didn't continue Vivitrol after release?</label><br><em>(Read list and check all that apply, then skip to question #49)</em>",
+      "prompt": "<label>Are any of the following statements reasons why you didn't continue Vivitrol after release?</label><br><em>(Read list and check all that apply)</em>",
       "other": true,
       "otherPrompt": "Please specify other",
       "arrayPrompts":[
@@ -5046,7 +5047,7 @@
           }
         ]
       },
-      "prompt": "<label>How many Vivitrol injections have you received in the past 3 months?</label><br><em> (Note: should be between 1 and 3) (If 3 injections, then skip to question #48)</em>"
+      "prompt": "<label>How many Vivitrol injections have you received in the past 3 months?</label><br><em> (Note: should be between 1 and 3)</em>"
     },
     {
       "eid": "1347",
@@ -6500,7 +6501,7 @@
           }
         ]
       },
-      "prompt": "<label>How often did you use needles or syringes that were \"<u>dirty</u>\" - that someone else had used and were not sterilized or cleaned with bleach before you used them in that 3 months?</label>",
+      "prompt": "<label>In the past 3 months, how often did you use needles or syringes that were \"<u>dirty</u>\" - that someone else had used and were not sterilized or cleaned with bleach before you used them?</label>",
       "arrayPrompts":[
         {
           "arrayid": 0,
@@ -6670,7 +6671,7 @@
           }
         ]
       },
-      "prompt": "<label>How many of your injection partners (people who you inject with) do <u>not</u> reside in this area (Appalachia/Eastern Kentucky)?</label><br><em>(Note: should not be higher than the number listed in question #10)</em>"
+      "prompt": "<label>How many of your injection partners (people who you inject with) do <u>not</u> reside in this area (Appalachia/Eastern Kentucky)?</label><br><em></em>"
     },
     {
       "eid": "1814",
@@ -6848,7 +6849,7 @@
       "sortIndex": 0,
       "title": "malesexp",
       "controlmodule": "shorttext",
-      "prompt": "<label>How many different <u>male sex partners</u> (oral, anal or vaginal) have you had since release?</label>"
+      "prompt": "<label>How many different <u>male sex partners</u> (oral, anal or vaginal) have you had since your release?</label>"
     },
     {
       "eid": "1902",
@@ -6895,7 +6896,7 @@
       "sortIndex": 15,
       "title": "femalesexp",
       "controlmodule": "shorttext",
-      "prompt": "<label>How many different <u>female sex partners</u> (oral, anal or vaginal) have you had since release?</label>"
+      "prompt": "<label>How many different <u>female sex partners</u> (oral, anal or vaginal) have you had since your release?</label>"
     },
     {
       "eid": "1905",
@@ -7331,7 +7332,7 @@
       "sortIndex": 20,
       "title": "expanx3",
       "controlmodule": "radiolist",
-      "prompt": "<label>Experience serious anxiety or tension</label>",
+      "prompt": "<label>During the past 3 months (not a direct result of drug/alcohol use) did you experience serious anxiety or tension</label>",
       "arrayPrompts":[
         {
           "arrayid": 0,
@@ -7383,7 +7384,7 @@
       "sortIndex": 30,
       "title": "exphall3",
       "controlmodule": "radiolist",
-      "prompt": "<label>Experience hallucinations</label>",
+      "prompt": "<label>During the past 3 months (not a direct result of drug/alcohol use) did you experience hallucinations</label>",
       "arrayPrompts":[
         {
           "arrayid": 0,
@@ -7435,7 +7436,7 @@
       "sortIndex": 40,
       "title": "expcog3",
       "controlmodule": "radiolist",
-      "prompt": "<label>Experience trouble understanding, concentrating, or remembering</label>",
+      "prompt": "<label>During the past 3 months (not a direct result of drug/alcohol use) did you experience trouble understanding, concentrating, or remembering</label>",
       "arrayPrompts":[
         {
           "arrayid": 0,
@@ -7487,7 +7488,7 @@
       "sortIndex": 50,
       "title": "exprage3",
       "controlmodule": "radiolist",
-      "prompt": "<label>Experience trouble controlling violent behavior, including episodes of rage</label>",
+      "prompt": "<label>During the past 3 months (not a direct result of drug/alcohol use) did you experience trouble controlling violent behavior, including episodes of rage</label>",
       "arrayPrompts":[
         {
           "arrayid": 0,
@@ -7539,7 +7540,7 @@
       "sortIndex": 60,
       "title": "expsuic3",
       "controlmodule": "radiolist",
-      "prompt": "<label>Experience serious thoughts of suicide</label>",
+      "prompt": "<label>During the past 3 months (not a direct result of drug/alcohol use) did you experience serious thoughts of suicide</label>",
       "arrayPrompts":[
         {
           "arrayid": 0,
@@ -7592,7 +7593,7 @@
       "sortIndex": 70,
       "title": "atmsuic3",
       "controlmodule": "radiolist",
-      "prompt": "<label>Attempt suicide</label>",
+      "prompt": "<label>During the past 3 months (not a direct result of drug/alcohol use) did you attempt suicide</label>",
       "arrayPrompts":[
         {
           "arrayid": 0,
@@ -7644,7 +7645,7 @@
       "sortIndex": 80,
       "title": "rxemot3",
       "controlmodule": "radiolist",
-      "prompt": "<label>Been prescribed medication for any psychological or emotional problem</label>",
+      "prompt": "<label>During the past 3 months (not a direct result of drug/alcohol use) have you been prescribed medication for any psychological or emotional problem</label>",
       "arrayPrompts":[
         {
           "arrayid": 0,
@@ -7696,7 +7697,7 @@
       "sortIndex": 90,
       "title": "daysexp1",
       "controlmodule": "shorttext",
-      "prompt": "<label>How many days in the past 30 have you experienced these psychological or emotional problems?</label><br><em>(This refers to problems note in questions 2a-2f)</em>"
+      "prompt": "<label>How many times in the past 30 days have you experienced these psychological or emotional problems?</label><br><em>(This refers to problems note in questions 2a-2f)</em>"
     },
     {
       "eid": "2010",
@@ -8591,7 +8592,7 @@
       "sortIndex": 5,
       "title": "hivinfo",
       "controlmodule": "radiolist",
-      "prompt": "<label>Has anyone ever given you information on the HIV or AIDS?</label>",
+      "prompt": "<label>Has anyone ever given you information on HIV or AIDS?</label>",
       "arrayPrompts":[
         {
           "arrayid": 0,
@@ -10001,7 +10002,7 @@
       "sortIndex": 5,
       "title": "alterSex",
       "controlmodule": "basicnameinterpret",
-      "prompt": "<label>What is each peron's gender?</label>",
+      "prompt": "<label>What is each person's gender?</label>",
       "namelist": "gen20alters",
       "niEddi": "radiolist",
       "niEddiDetails": {
@@ -10511,7 +10512,7 @@
       "arrayPrompts": [
         {
           "arrayid": 0,
-          "prompt": "Injects drugs ",
+          "prompt": "Injects drugs",
           "value": "IVDU"
         },
         {
@@ -10521,17 +10522,17 @@
         },
         {
           "arrayid": 2,
-          "prompt": "Shared needles  with you ",
+          "prompt": "Shared needles  with you",
           "value": "ndlswego"
         },
         {
           "arrayid": 3,
-          "prompt": "Shared cookers, cotton, or rinse water  with you",
+          "prompt": "Shared cookers, cotton, or rinse water with you",
           "value": "cookwego"
         },
         {
           "arrayid": 4,
-          "prompt": "Used a needle exchange program ",
+          "prompt": "Used a needle exchange program",
           "value": "usendlxp"
         }
       ]
@@ -10663,7 +10664,7 @@
       "sortIndex": 60,
       "title": "talksutx",
       "controlmodule": "niBoxpop",
-      "prompt": "<label>In the past 3 months, how often have you <u>discussed</u> substance use disorder treatment with eac pperson?</label>",
+      "prompt": "<label>In the past 3 months, how often have you <u>discussed</u> substance use disorder treatment with each person?</label>",
       "namelist": "gen20alters",
       "controltype": "radio",
       "other": true,
